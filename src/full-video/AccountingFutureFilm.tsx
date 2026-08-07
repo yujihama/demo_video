@@ -66,7 +66,7 @@ export const AccountingFutureFilm: React.FC = () => {
           presentation={fade()}
           timing={transitionTiming}
         />
-        <TransitionSeries.Sequence durationInFrames={120} name="Deloitte end card">
+        <TransitionSeries.Sequence durationInFrames={192} name="Deloitte end card">
           <Scene08 />
         </TransitionSeries.Sequence>
       </TransitionSeries>
@@ -74,7 +74,7 @@ export const AccountingFutureFilm: React.FC = () => {
       <Audio
         src={staticFile("accounting-future/bgm.wav")}
         volume={(frame) =>
-          interpolate(frame, [0, 48, 1252, 1353], [0, 0.11, 0.11, 0], {
+          interpolate(frame, [0, 48, 1330, 1425], [0, 0.11, 0.11, 0], {
             extrapolateLeft: "clamp",
             extrapolateRight: "clamp",
           })
@@ -108,4 +108,4 @@ export const AccountingFutureFilm: React.FC = () => {
   );
 };
 
-export const ACCOUNTING_FUTURE_DURATION = 1354;
+export const ACCOUNTING_FUTURE_DURATION = 1426;

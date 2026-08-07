@@ -6,7 +6,7 @@ AIエージェントと人が協働する、これからの経理業務を描い
 
 [accounting_future_1min_final.mp4](demo/accounting_future_1min_final.mp4)
 
-- 長さ: 約56.4秒
+- 長さ: 約59.4秒
 - 解像度: 608 × 352
 - フレームレート: 24fps
 - 音声: 日本語ナレーション、オリジナルBGM
@@ -52,7 +52,7 @@ npx remotion render AccountingFutureEndCard demo/accounting_future_end_card.mp4
 
 - `src/full-video/`: 全編のシーン構成、トランジション、音声配置
 - `src/Composition.tsx`: 全編およびエンドカードのComposition
-- `public/accounting-future/`: 映像クリップ、ナレーション、BGM
+- `public/accounting-future/`: 映像クリップ、ナレーション、BGM、エンドカード保持画像
 - `public/office-background.mp4`: エンドカード背景
 - `public/deloitte.svg`: エンドカード用ロゴ
 - `demo/`: レンダリング済み完成動画とプレビュー画像
