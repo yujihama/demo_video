@@ -13,6 +13,10 @@ import {
   ACCOUNTING_FUTURE_DURATION,
   AccountingFutureFilm,
 } from "./full-video/AccountingFutureFilm";
+import {
+  ACCOUNTING_FUTURE_V3_DURATION,
+  AccountingFutureV3,
+} from "./accounting-future-v3/AccountingFutureV3";
 
 const GREEN = "#86bc25";
 
@@ -323,6 +327,14 @@ export const MyComposition: React.FC = () => {
         id="AccountingFutureFilm"
         component={AccountingFutureFilm}
         durationInFrames={ACCOUNTING_FUTURE_DURATION}
+        fps={24}
+        width={608}
+        height={352}
+      />
+      <Composition
+        id="AccountingFutureFilmV3"
+        component={AccountingFutureV3}
+        durationInFrames={ACCOUNTING_FUTURE_V3_DURATION}
         fps={24}
         width={608}
         height={352}
