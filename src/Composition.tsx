@@ -17,6 +17,10 @@ import {
   ACCOUNTING_FUTURE_V3_DURATION,
   AccountingFutureV3,
 } from "./accounting-future-v3/AccountingFutureV3";
+import {
+  REPOSITORY_CITY_DURATION,
+  RepositoryCityFilm,
+} from "./repository-city/RepositoryCityFilm";
 
 const GREEN = "#86bc25";
 
@@ -338,6 +342,14 @@ export const MyComposition: React.FC = () => {
         fps={24}
         width={608}
         height={352}
+      />
+      <Composition
+        id="RepositoryCity5Min"
+        component={RepositoryCityFilm}
+        durationInFrames={REPOSITORY_CITY_DURATION}
+        fps={24}
+        width={1280}
+        height={720}
       />
     </>
   );

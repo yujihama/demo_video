@@ -2,6 +2,26 @@
 
 AIエージェントと人が協働する、これからの経理業務を描いた約1分のデモ動画です。
 
+## 5分04秒・8秒シーン接続実験
+
+[repository_city_5min_experiment.mp4](demo/repository_city_5min_experiment.mp4)
+
+- 長さ: 304.00秒（5分04秒）
+- 解像度: 1280 × 720
+- フレームレート: 24fps
+- 構成: 38シーン × 8.00秒
+- テーマ: 直近で更新された5つのリポジトリを、リポジトリ街の住人として擬人化
+- 音声: PC内蔵の日本語音声によるナレーション、オリジナルBGM
+
+シナリオ、事実確認元、全38シーン、ナレーション原稿は
+[docs/repository-city-5min-scenario.md](docs/repository-city-5min-scenario.md) を参照してください。
+
+Remotion Studioでは `RepositoryCity5Min` を選択します。再レンダリング:
+
+```powershell
+npx remotion render RepositoryCity5Min demo/repository_city_5min_experiment.mp4 --codec=h264 --crf=20 --audio-bitrate=192k --concurrency=4
+```
+
 ## 完成動画
 
 [accounting_future_1min_final.mp4](demo/accounting_future_1min_final.mp4)

@@ -1,0 +1,66 @@
+{
+  "path": "C:\\Users\\nyham\\Documents\\Codex\\2026-08-07\\pc-minmax-h3-x-ui\\end-card\\demo\\repository_city_5min_experiment.mp4",
+  "size_bytes": 26604527,
+  "container_duration_sec": 304.021,
+  "video": {
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": "24",
+    "frames": 7296,
+    "duration_sec": 304.0
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration_sec": 304.021
+  },
+  "extracted_frames": [
+    {
+      "target_sec": 0.5,
+      "actual_sec": 0.5,
+      "file": "demo\\repository-city-final-qc\\final-000.50s.png"
+    },
+    {
+      "target_sec": 7.95,
+      "actual_sec": 7.958,
+      "file": "demo\\repository-city-final-qc\\final-007.95s.png"
+    },
+    {
+      "target_sec": 8.05,
+      "actual_sec": 8.083,
+      "file": "demo\\repository-city-final-qc\\final-008.05s.png"
+    },
+    {
+      "target_sec": 64.5,
+      "actual_sec": 64.5,
+      "file": "demo\\repository-city-final-qc\\final-064.50s.png"
+    },
+    {
+      "target_sec": 136.5,
+      "actual_sec": 136.5,
+      "file": "demo\\repository-city-final-qc\\final-136.50s.png"
+    },
+    {
+      "target_sec": 184.5,
+      "actual_sec": 184.5,
+      "file": "demo\\repository-city-final-qc\\final-184.50s.png"
+    },
+    {
+      "target_sec": 248.5,
+      "actual_sec": 248.5,
+      "file": "demo\\repository-city-final-qc\\final-248.50s.png"
+    },
+    {
+      "target_sec": 280.5,
+      "actual_sec": 280.5,
+      "file": "demo\\repository-city-final-qc\\final-280.50s.png"
+    },
+    {
+      "target_sec": 303.0,
+      "actual_sec": 303.0,
+      "file": "demo\\repository-city-final-qc\\final-303.00s.png"
+    }
+  ]
+}
