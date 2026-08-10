@@ -1,0 +1,137 @@
+[
+  {
+    "id": "01",
+    "day": "DAY 1",
+    "location": "札幌・大通公園",
+    "title": "季節をまたぐ北海道へ",
+    "commons_title": "File:Hokkaido Sapporo Odori Park.jpg",
+    "spoken_text": "北海道、季節をまたぐ架空の三日間。雪の札幌、大通公園からスタートします。",
+    "prompt": "Photorealistic winter travel vlog B-roll in Hokkaido. Begin exactly from the provided real reference photograph of snow-covered Odori Park in Sapporo and preserve the recognizable park layout, skyline, tower viewpoint, winter season, snow cover, and architecture. The camera makes a very slow cinematic push forward over the snowy park, bare branches move gently in a light breeze, tiny distant pedestrians move naturally, soft winter daylight and realistic atmospheric depth. Natural documentary motion only. No new buildings, no altered landmark geometry, no readable text, no logos, no close-up faces, no fantasy, no surreal objects, no warping."
+  },
+  {
+    "id": "02",
+    "day": "DAY 1",
+    "location": "札幌・時計台",
+    "title": "時計台の入口で足を止める",
+    "commons_title": "File:Sapporo Clock Tower 130.JPG",
+    "spoken_text": "時計台の入口まで歩くと、街の真ん中だけ、時間が少しゆっくりに。",
+    "prompt": "Photorealistic handheld Japanese travel vlog shot. Begin exactly from the provided real photograph of the entrance to the Sapporo Clock Tower and preserve the visible white wooden facade, green doorway, stone steps, winter garland, surrounding branches, and close perspective. Gentle stabilized motion moves only slightly closer, branches and decorations sway softly, realistic overcast daylight and camera exposure. Do not reveal or invent parts of the tower that are outside the reference frame. No reconstruction, no new signage, no readable generated text, no logos, no people added, no distorted architecture, no surreal elements."
+  },
+  {
+    "id": "03",
+    "day": "DAY 1",
+    "location": "札幌・二条市場",
+    "title": "朝の市場へ寄り道",
+    "commons_title": "File:Nijo fish Market 2014.jpg",
+    "spoken_text": "二条市場では、朝から海の匂い。最初の寄り道が、もう正解です。",
+    "prompt": "Photorealistic casual travel vlog inside and around Sapporo Nijo Fish Market. Begin exactly from the real reference photograph and preserve the recognizable market entrance, stall arrangement, awnings, colors, and perspective. Slow handheld forward drift as fabric signs and hanging decorations move slightly, vendors and visitors remain small and natural in the distance, warm lively morning ambience. Preserve all structures and do not invent products. No readable generated text, no new logos, no close-up faces, no warped hands, no surreal motion, no dramatic camera shake."
+  },
+  {
+    "id": "04",
+    "day": "DAY 1",
+    "location": "小樽・運河",
+    "title": "運河沿いをゆっくり歩く",
+    "commons_title": "File:Otaru Canal Dusk in summer.jpg",
+    "spoken_text": "電車で小樽へ。運河沿いは、水と石の色までゆっくりでした。",
+    "prompt": "Photorealistic Hokkaido travel vlog at Otaru Canal in clear daytime. Start exactly from the provided real photograph and preserve the canal, historic stone warehouses, lamps, walkway, perspective, blue sky, and daylight colors. Slow smooth camera glide along the canal, subtle water ripples and reflections, clouds drift gently, a few distant people stroll naturally. Realistic documentary exposure and gentle breeze. No change from day to dusk, no new buildings, no altered landmark layout, no text, no logos, no close-up faces, no fantasy, no warped geometry."
+  },
+  {
+    "id": "05",
+    "day": "DAY 1",
+    "location": "小樽・堺町通り",
+    "title": "古い建物と小さな店",
+    "commons_title": "File:Sakaimachi street Otaru Hokkaido04bs3.jpg",
+    "spoken_text": "堺町通りは、古い建物と小さな店が続いて、歩くほど楽しい。",
+    "prompt": "Photorealistic winter first-person travel vlog walking on snowy Sakaimachi Street in Otaru. Begin exactly from the real reference photograph and preserve the historic storefronts, street width, rooflines, utility poles, overcast winter daylight, and snow banks. Gentle stabilized forward walking motion, small distant visitors move naturally, shop flags shift in a light breeze, subtle handheld parallax. Do not remove the snow, change architecture, or invent prominent signs. No readable generated text, no logos, no close-up faces, no warped people, no fantasy objects."
+  },
+  {
+    "id": "06",
+    "day": "DAY 1",
+    "location": "札幌・藻岩山",
+    "title": "一日目を街の上から",
+    "commons_title": "File:Japan Sapporo Mt.Moiwa 0049.jpg",
+    "spoken_text": "札幌へ戻り、藻岩山から一日を見渡します。街が旅の地図みたい。",
+    "prompt": "Photorealistic panoramic travel vlog view from Mount Moiwa in Sapporo. Begin exactly from the supplied real photograph and preserve the observation viewpoint, city basin, mountain ridges, horizon, and weather. Very slow cinematic pan with realistic depth, clouds drift gently, distant city haze changes subtly, foreground vegetation moves in a soft breeze. No invented skyline, no changing geography, no text, no logos, no people added, no surreal sky, no excessive timelapse."
+  },
+  {
+    "id": "07",
+    "day": "DAY 2",
+    "location": "美瑛・白金青い池",
+    "title": "青い池で朝の静けさ",
+    "commons_title": "File:Shirogane Blue Pond, Biei, Hokkaido Japan.jpg",
+    "spoken_text": "二日目は美瑛の青い池。静かな水の色だけで、朝の眠気が消えました。",
+    "prompt": "Photorealistic serene travel vlog at Shirogane Blue Pond in Biei. Begin exactly from the real reference photograph and preserve the blue water color, standing tree trunks, forest line, composition, and season. Slow gentle push toward the pond, tiny water ripples and accurate reflections, leaves and grasses move lightly, calm natural daylight. Preserve the real landscape and tree positions. No people, no animals, no color fantasy, no new objects, no text, no logos, no warped trees."
+  },
+  {
+    "id": "08",
+    "day": "DAY 2",
+    "location": "美瑛・四季彩の丘",
+    "title": "花の帯が地平線まで",
+    "commons_title": "File:Shikisai-no-oka.jpg",
+    "spoken_text": "四季彩の丘では、色の帯が、地平線まで続きます。",
+    "prompt": "Photorealistic summer Hokkaido travel vlog at Shikisai no Oka in Biei. Start exactly from the real reference photograph and preserve the striped flower fields, rolling hills, distant mountains, path lines, and real color arrangement. Smooth low-speed lateral camera slide creates subtle parallax, flowers sway in a light breeze, soft clouds move slowly, realistic sunlight. Do not invent buildings or change field geometry. No people close-up, no text, no logos, no oversaturated fantasy colors, no warping."
+  },
+  {
+    "id": "09",
+    "day": "DAY 2",
+    "location": "富良野・ファーム富田",
+    "title": "紫の波を追いかける",
+    "commons_title": "File:Furano Lavender FarmTomita.jpg",
+    "spoken_text": "富良野のラベンダー畑。風が吹くたび、紫が波のように動きます。",
+    "prompt": "Photorealistic cinematic macro travel vlog at Farm Tomita, Furano. Begin exactly from the real close-up reference photograph and preserve the lavender blossoms, shallow depth of field, butterfly position and markings, green background, season, and composition. The camera makes an extremely slow macro push, lavender flowers move gently in the breeze, and the single butterfly makes only subtle natural wing and antenna movements while remaining on the flower. Do not widen into an invented landscape, do not add insects or people, no giant flowers, no text, no logos, no fantasy color grading, no visual distortion."
+  },
+  {
+    "id": "10",
+    "day": "DAY 2",
+    "location": "富良野・ラベンダーソフト",
+    "title": "休憩は夏色のソフト",
+    "commons_title": "File:Lavender soft serve at Farm Tomita.jpg",
+    "spoken_text": "休憩はラベンダーソフト。見た目よりすっきりで、夏の味。",
+    "prompt": "Photorealistic close travel vlog food shot. Start exactly from the real reference photograph of lavender soft serve at Farm Tomita and preserve the white cup lying at a diagonal angle on the dark textured surface, the purple soft-serve swirl, framing, and natural lighting. Very slight handheld camera movement and realistic shallow depth of field while the cup and ice cream remain stable and believable. Do not add a hand or stand the cup upright. No changing container, no melting transformation, no readable generated text, no new logos, no duplicated food, no surreal motion."
+  },
+  {
+    "id": "11",
+    "day": "DAY 2",
+    "location": "登別・地獄谷",
+    "title": "地面が呼吸する谷",
+    "commons_title": "File:Jigokudani (Hell Valley), Noboribetsu Onsen, Hokkaido, April 2023 05.jpg",
+    "spoken_text": "南へ走って登別。地獄谷の湯気に近づくと、地面が呼吸しているよう。",
+    "prompt": "Photorealistic documentary travel vlog at Jigokudani Hell Valley in Noboribetsu, Hokkaido. Begin exactly from the real reference photograph and preserve the volcanic valley, boardwalk or path, rocky slopes, vegetation, and viewpoint. Slow careful push forward, natural white steam rises and drifts with the wind, subtle cloud movement, realistic mineral colors and daylight. No lava, no eruption, no dramatic disaster, no added structures, no text, no logos, no warped landscape, no fantasy."
+  },
+  {
+    "id": "12",
+    "day": "DAY 2",
+    "location": "洞爺湖",
+    "title": "何もしない時間をつくる",
+    "commons_title": "File:Lake Toya 20140807.jpg",
+    "spoken_text": "洞爺湖では、景色の音量が急に下がります。しばらく、何もしない時間。",
+    "prompt": "Photorealistic calm Hokkaido travel vlog at Lake Toya. Start exactly from the real reference photograph and preserve the foreground sign, railing, flowers, shoreline, lake, islands or mountains, horizon, and weather. Locked-off camera with a very slow pan, realistic sunlight sparkles on small water ripples, thin clouds drift, nearby leaves and flowers move gently. Quiet natural documentary mood. No boats or buildings added, no changed geography, do not erase or rewrite the existing sign, no new text, no logos, no people, no surreal colors or motion."
+  },
+  {
+    "id": "13",
+    "day": "DAY 3",
+    "location": "函館・朝市",
+    "title": "港の朝は声から始まる",
+    "commons_title": "File:Hakodate Morning Market, Hakodate Asaichi, Hakodate, 2014.jpg",
+    "spoken_text": "三日目、函館朝市。海鮮を選ぶ声で、港の朝が始まります。",
+    "prompt": "Photorealistic lively but natural travel vlog at Hakodate Morning Market. Begin exactly from the provided real photograph and preserve the market stalls, aisle, products, awnings, and perspective. Slow stabilized walking motion, distant shoppers and vendors move naturally, hanging items shift slightly, bright morning light. Keep people small and non-identifiable. No invented merchandise, no readable generated text, no logos, no close-up faces, no warped hands, no surreal motion."
+  },
+  {
+    "id": "14",
+    "day": "DAY 3",
+    "location": "函館・元町",
+    "title": "坂の上に残る異国の輪郭",
+    "commons_title": "File:Motomachi Catholic Church in Hakodate Hokkaido Japan01n.jpg",
+    "spoken_text": "元町の坂と教会へ。海風の中に、異国の輪郭が残っていました。",
+    "prompt": "Photorealistic architectural travel vlog in Hakodate Motomachi. Begin exactly from the real reference photograph and preserve the Catholic church facade, tower, roof, surrounding trees, street, and perspective. Slow gentle upward camera tilt and slight push closer, leaves move in the sea breeze, clouds drift naturally, realistic daylight. Do not alter the church architecture, cross, windows, or street geometry. No new signage, no readable text, no logos, no close-up people, no warping, no fantasy."
+  },
+  {
+    "id": "15",
+    "day": "DAY 3",
+    "location": "函館山",
+    "title": "光のくびれで旅を閉じる",
+    "commons_title": "File:Mount-Hakodate Night-view.jpg",
+    "spoken_text": "最後は函館山。光のくびれを眺めて、架空の三日間を閉じます。",
+    "prompt": "Photorealistic night travel vlog from Mount Hakodate. Begin exactly from the supplied real long-exposure photograph and preserve the iconic hourglass-shaped city lights, coastline, dark bay, horizon, and viewpoint. Nearly locked camera with an extremely slow cinematic push, distant city lights twinkle subtly, faint clouds drift, realistic night exposure and atmospheric haze. Do not change the coastline or city layout. No fireworks, no aurora, no added text, no logos, no people, no fantasy lighting, no warped geography."
+  }
+]

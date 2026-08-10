@@ -1,0 +1,262 @@
+{
+  "status": "pass",
+  "final": {
+    "file": "end-card\\demo\\hokkaido_fictional_vlog_2min.mp4",
+    "sha256": "39f585dabbb3a2a2f88b5edb61f32384677b758f0b8088c1cb6c06fdcb3983ef",
+    "video": {
+      "width": 1280,
+      "height": 720,
+      "fps": 24.0,
+      "frame_count": 2880,
+      "duration_seconds": 120.0,
+      "has_audio": true,
+      "audio_stream_count": 1
+    },
+    "integrity": {
+      "boundary_frame_count": 28,
+      "minimum_boundary_luma": 30.32,
+      "maximum_boundary_luma": 106.46,
+      "no_black_scene_boundaries": true,
+      "audio_duration_seconds": 120.021,
+      "audio_rms": 0.082344,
+      "audio_peak": 0.802467,
+      "audio_is_non_silent": true
+    }
+  },
+  "trace": {
+    "reference_count": 15,
+    "generation_count": 15,
+    "verified_scene_count": 15,
+    "all_input_hashes_match": true,
+    "all_output_hashes_match": true
+  },
+  "clips": [
+    {
+      "scene_id": "01",
+      "prepared_hash_matches": true,
+      "output_hash_matches": true,
+      "video": {
+        "width": 608,
+        "height": 352,
+        "fps": 24.0,
+        "frame_count": 192,
+        "duration_seconds": 8.0,
+        "has_audio": true,
+        "audio_stream_count": 1
+      }
+    },
+    {
+      "scene_id": "02",
+      "prepared_hash_matches": true,
+      "output_hash_matches": true,
+      "video": {
+        "width": 608,
+        "height": 352,
+        "fps": 24.0,
+        "frame_count": 192,
+        "duration_seconds": 8.0,
+        "has_audio": true,
+        "audio_stream_count": 1
+      }
+    },
+    {
+      "scene_id": "03",
+      "prepared_hash_matches": true,
+      "output_hash_matches": true,
+      "video": {
+        "width": 608,
+        "height": 352,
+        "fps": 24.0,
+        "frame_count": 192,
+        "duration_seconds": 8.0,
+        "has_audio": true,
+        "audio_stream_count": 1
+      }
+    },
+    {
+      "scene_id": "04",
+      "prepared_hash_matches": true,
+      "output_hash_matches": true,
+      "video": {
+        "width": 608,
+        "height": 352,
+        "fps": 24.0,
+        "frame_count": 192,
+        "duration_seconds": 8.0,
+        "has_audio": true,
+        "audio_stream_count": 1
+      }
+    },
+    {
+      "scene_id": "05",
+      "prepared_hash_matches": true,
+      "output_hash_matches": true,
+      "video": {
+        "width": 608,
+        "height": 352,
+        "fps": 24.0,
+        "frame_count": 192,
+        "duration_seconds": 8.0,
+        "has_audio": true,
+        "audio_stream_count": 1
+      }
+    },
+    {
+      "scene_id": "06",
+      "prepared_hash_matches": true,
+      "output_hash_matches": true,
+      "video": {
+        "width": 608,
+        "height": 352,
+        "fps": 24.0,
+        "frame_count": 192,
+        "duration_seconds": 8.0,
+        "has_audio": true,
+        "audio_stream_count": 1
+      }
+    },
+    {
+      "scene_id": "07",
+      "prepared_hash_matches": true,
+      "output_hash_matches": true,
+      "video": {
+        "width": 608,
+        "height": 352,
+        "fps": 24.0,
+        "frame_count": 192,
+        "duration_seconds": 8.0,
+        "has_audio": true,
+        "audio_stream_count": 1
+      }
+    },
+    {
+      "scene_id": "08",
+      "prepared_hash_matches": true,
+      "output_hash_matches": true,
+      "video": {
+        "width": 608,
+        "height": 352,
+        "fps": 24.0,
+        "frame_count": 192,
+        "duration_seconds": 8.0,
+        "has_audio": true,
+        "audio_stream_count": 1
+      }
+    },
+    {
+      "scene_id": "09",
+      "prepared_hash_matches": true,
+      "output_hash_matches": true,
+      "video": {
+        "width": 608,
+        "height": 352,
+        "fps": 24.0,
+        "frame_count": 192,
+        "duration_seconds": 8.0,
+        "has_audio": true,
+        "audio_stream_count": 1
+      }
+    },
+    {
+      "scene_id": "10",
+      "prepared_hash_matches": true,
+      "output_hash_matches": true,
+      "video": {
+        "width": 608,
+        "height": 352,
+        "fps": 24.0,
+        "frame_count": 192,
+        "duration_seconds": 8.0,
+        "has_audio": true,
+        "audio_stream_count": 1
+      }
+    },
+    {
+      "scene_id": "11",
+      "prepared_hash_matches": true,
+      "output_hash_matches": true,
+      "video": {
+        "width": 608,
+        "height": 352,
+        "fps": 24.0,
+        "frame_count": 192,
+        "duration_seconds": 8.0,
+        "has_audio": true,
+        "audio_stream_count": 1
+      }
+    },
+    {
+      "scene_id": "12",
+      "prepared_hash_matches": true,
+      "output_hash_matches": true,
+      "video": {
+        "width": 608,
+        "height": 352,
+        "fps": 24.0,
+        "frame_count": 192,
+        "duration_seconds": 8.0,
+        "has_audio": true,
+        "audio_stream_count": 1
+      }
+    },
+    {
+      "scene_id": "13",
+      "prepared_hash_matches": true,
+      "output_hash_matches": true,
+      "video": {
+        "width": 608,
+        "height": 352,
+        "fps": 24.0,
+        "frame_count": 192,
+        "duration_seconds": 8.0,
+        "has_audio": true,
+        "audio_stream_count": 1
+      }
+    },
+    {
+      "scene_id": "14",
+      "prepared_hash_matches": true,
+      "output_hash_matches": true,
+      "video": {
+        "width": 608,
+        "height": 352,
+        "fps": 24.0,
+        "frame_count": 192,
+        "duration_seconds": 8.0,
+        "has_audio": true,
+        "audio_stream_count": 1
+      }
+    },
+    {
+      "scene_id": "15",
+      "prepared_hash_matches": true,
+      "output_hash_matches": true,
+      "video": {
+        "width": 608,
+        "height": 352,
+        "fps": 24.0,
+        "frame_count": 192,
+        "duration_seconds": 8.0,
+        "has_audio": true,
+        "audio_stream_count": 1
+      }
+    }
+  ],
+  "qc_frames": [
+    "end-card\\demo\\hokkaido-vlog-qc\\scene01-mid.png",
+    "end-card\\demo\\hokkaido-vlog-qc\\scene02-mid.png",
+    "end-card\\demo\\hokkaido-vlog-qc\\scene03-mid.png",
+    "end-card\\demo\\hokkaido-vlog-qc\\scene04-mid.png",
+    "end-card\\demo\\hokkaido-vlog-qc\\scene05-mid.png",
+    "end-card\\demo\\hokkaido-vlog-qc\\scene06-mid.png",
+    "end-card\\demo\\hokkaido-vlog-qc\\scene07-mid.png",
+    "end-card\\demo\\hokkaido-vlog-qc\\scene08-mid.png",
+    "end-card\\demo\\hokkaido-vlog-qc\\scene09-mid.png",
+    "end-card\\demo\\hokkaido-vlog-qc\\scene10-mid.png",
+    "end-card\\demo\\hokkaido-vlog-qc\\scene11-mid.png",
+    "end-card\\demo\\hokkaido-vlog-qc\\scene12-mid.png",
+    "end-card\\demo\\hokkaido-vlog-qc\\scene13-mid.png",
+    "end-card\\demo\\hokkaido-vlog-qc\\scene14-mid.png",
+    "end-card\\demo\\hokkaido-vlog-qc\\scene15-mid.png"
+  ]
+}
