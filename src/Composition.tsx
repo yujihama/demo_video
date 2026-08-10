@@ -17,6 +17,10 @@ import {
   ACCOUNTING_FUTURE_V3_DURATION,
   AccountingFutureV3,
 } from "./accounting-future-v3/AccountingFutureV3";
+import {
+  HOKKAIDO_VLOG_DURATION,
+  HokkaidoVlogFilm,
+} from "./hokkaido-vlog/HokkaidoVlogFilm";
 
 const GREEN = "#86bc25";
 
@@ -338,6 +342,14 @@ export const MyComposition: React.FC = () => {
         fps={24}
         width={608}
         height={352}
+      />
+      <Composition
+        id="HokkaidoFictionalVlog"
+        component={HokkaidoVlogFilm}
+        durationInFrames={HOKKAIDO_VLOG_DURATION}
+        fps={24}
+        width={1280}
+        height={720}
       />
     </>
   );

@@ -1,0 +1,512 @@
+[
+  {
+    "scene_id": "01",
+    "location": "札幌・大通公園",
+    "commons_title": "File:Hokkaido Sapporo Odori Park.jpg",
+    "commons_page_url": "https://commons.wikimedia.org/wiki/File:Hokkaido_Sapporo_Odori_Park.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Hokkaido_Sapporo_Odori_Park.jpg/1920px-Hokkaido_Sapporo_Odori_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Hokkaido_Sapporo_Odori_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "creator": "Nkns",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "description": "大通公園",
+    "date": "2004-02-09",
+    "commons_sha1": "d01ce99212fe18d9ca80cb173c00893bd9d70b43",
+    "source_file": "production\\hokkaido_vlog\\references\\source\\scene01.jpg",
+    "source_sha256": "418468eeebd131842cc47153a228ccb86061ba65bb9ec4935f1fcbf4db4905b1",
+    "source_dimensions": [
+      1920,
+      1440
+    ],
+    "prepared_file": "production\\hokkaido_vlog\\references\\prepared\\scene01.png",
+    "prepared_sha256": "f269de154c2dc38a47afb1b48018edff2be34d1d991fc85cf3fddde03c175296",
+    "prepared_dimensions": [
+      608,
+      352
+    ],
+    "crop_box": [
+      0,
+      164,
+      1920,
+      1276
+    ],
+    "comfy_input": "hokkaido_vlog/scene01.png",
+    "h3_prompt": "Photorealistic winter travel vlog B-roll in Hokkaido. Begin exactly from the provided real reference photograph of snow-covered Odori Park in Sapporo and preserve the recognizable park layout, skyline, tower viewpoint, winter season, snow cover, and architecture. The camera makes a very slow cinematic push forward over the snowy park, bare branches move gently in a light breeze, tiny distant pedestrians move naturally, soft winter daylight and realistic atmospheric depth. Natural documentary motion only. No new buildings, no altered landmark geometry, no readable text, no logos, no close-up faces, no fantasy, no surreal objects, no warping."
+  },
+  {
+    "scene_id": "02",
+    "location": "札幌・時計台",
+    "commons_title": "File:Sapporo Clock Tower 130.JPG",
+    "commons_page_url": "https://commons.wikimedia.org/wiki/File:Sapporo_Clock_Tower_130.JPG",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Sapporo_Clock_Tower_130.JPG/1920px-Sapporo_Clock_Tower_130.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Sapporo_Clock_Tower_130.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "creator": "Ninosan",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "description": "札幌市時計台130周年時の様子",
+    "date": "2008-12-03",
+    "commons_sha1": "7ddfd8c0cc1ea516e9aed9d41a0c9db23d0c1e5c",
+    "source_file": "production\\hokkaido_vlog\\references\\source\\scene02.jpg",
+    "source_sha256": "3f089d4b256b07de2d2ef399e65ed2af883e40e977a58416ad02f599668ef09d",
+    "source_dimensions": [
+      1920,
+      1440
+    ],
+    "prepared_file": "production\\hokkaido_vlog\\references\\prepared\\scene02.png",
+    "prepared_sha256": "27a0daf650658f4658ba99fcf249738d678373c51dd04d3e31cd6bb622aa3f53",
+    "prepared_dimensions": [
+      608,
+      352
+    ],
+    "crop_box": [
+      0,
+      164,
+      1920,
+      1276
+    ],
+    "comfy_input": "hokkaido_vlog/scene02.png",
+    "h3_prompt": "Photorealistic handheld Japanese travel vlog shot. Begin exactly from the provided real photograph of the entrance to the Sapporo Clock Tower and preserve the visible white wooden facade, green doorway, stone steps, winter garland, surrounding branches, and close perspective. Gentle stabilized motion moves only slightly closer, branches and decorations sway softly, realistic overcast daylight and camera exposure. Do not reveal or invent parts of the tower that are outside the reference frame. No reconstruction, no new signage, no readable generated text, no logos, no people added, no distorted architecture, no surreal elements."
+  },
+  {
+    "scene_id": "03",
+    "location": "札幌・二条市場",
+    "commons_title": "File:Nijo fish Market 2014.jpg",
+    "commons_page_url": "https://commons.wikimedia.org/wiki/File:Nijo_fish_Market_2014.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Nijo_fish_Market_2014.jpg/1920px-Nijo_fish_Market_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Nijo_fish_Market_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "creator": "Wing1990hk",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "description": "Nijo fish Market, Sapporo",
+    "date": "2014-06-27",
+    "commons_sha1": "bff75cb86a5c0a02c36999f59c78ec63f1113904",
+    "source_file": "production\\hokkaido_vlog\\references\\source\\scene03.jpg",
+    "source_sha256": "589f5c6f10bbc22120b391b5d2af367b1ef06de0d53dd5cce39b77d0782a59e3",
+    "source_dimensions": [
+      1920,
+      1440
+    ],
+    "prepared_file": "production\\hokkaido_vlog\\references\\prepared\\scene03.png",
+    "prepared_sha256": "e505d4695b8b9250e4cab8dfa9c9f03b72ed0b66820cd2b10822e98f26f83dcf",
+    "prepared_dimensions": [
+      608,
+      352
+    ],
+    "crop_box": [
+      0,
+      164,
+      1920,
+      1276
+    ],
+    "comfy_input": "hokkaido_vlog/scene03.png",
+    "h3_prompt": "Photorealistic casual travel vlog inside and around Sapporo Nijo Fish Market. Begin exactly from the real reference photograph and preserve the recognizable market entrance, stall arrangement, awnings, colors, and perspective. Slow handheld forward drift as fabric signs and hanging decorations move slightly, vendors and visitors remain small and natural in the distance, warm lively morning ambience. Preserve all structures and do not invent products. No readable generated text, no new logos, no close-up faces, no warped hands, no surreal motion, no dramatic camera shake."
+  },
+  {
+    "scene_id": "04",
+    "location": "小樽・運河",
+    "commons_title": "File:Otaru Canal Dusk in summer.jpg",
+    "commons_page_url": "https://commons.wikimedia.org/wiki/File:Otaru_Canal_Dusk_in_summer.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Otaru_Canal_Dusk_in_summer.jpg/1920px-Otaru_Canal_Dusk_in_summer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Otaru_Canal_Dusk_in_summer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "creator": "Sho Horiuchi",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "description": "Otaru Canal Dusk in summer",
+    "date": "2010-09",
+    "commons_sha1": "1db2023f0a1ffc0e3652fcdbe90a7124159797fe",
+    "source_file": "production\\hokkaido_vlog\\references\\source\\scene04.jpg",
+    "source_sha256": "cdae52868dbee665f49d1b709a150c71d6bc60a8d379e6c4e8509d8ced7f8bf0",
+    "source_dimensions": [
+      1920,
+      1440
+    ],
+    "prepared_file": "production\\hokkaido_vlog\\references\\prepared\\scene04.png",
+    "prepared_sha256": "b9999237c23909bec5bad934de9b68b823426c313a70767c11b99e63d41c7e4a",
+    "prepared_dimensions": [
+      608,
+      352
+    ],
+    "crop_box": [
+      0,
+      164,
+      1920,
+      1276
+    ],
+    "comfy_input": "hokkaido_vlog/scene04.png",
+    "h3_prompt": "Photorealistic Hokkaido travel vlog at Otaru Canal in clear daytime. Start exactly from the provided real photograph and preserve the canal, historic stone warehouses, lamps, walkway, perspective, blue sky, and daylight colors. Slow smooth camera glide along the canal, subtle water ripples and reflections, clouds drift gently, a few distant people stroll naturally. Realistic documentary exposure and gentle breeze. No change from day to dusk, no new buildings, no altered landmark layout, no text, no logos, no close-up faces, no fantasy, no warped geometry."
+  },
+  {
+    "scene_id": "05",
+    "location": "小樽・堺町通り",
+    "commons_title": "File:Sakaimachi street Otaru Hokkaido04bs3.jpg",
+    "commons_page_url": "https://commons.wikimedia.org/wiki/File:Sakaimachi_street_Otaru_Hokkaido04bs3.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Sakaimachi_street_Otaru_Hokkaido04bs3.jpg/1920px-Sakaimachi_street_Otaru_Hokkaido04bs3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Sakaimachi_street_Otaru_Hokkaido04bs3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "creator": "663highland",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "description": "Sakaimachi-dori (Sakaimachi Street) in Otaru, Hokkaido prefecture, Japan",
+    "date": "2011-11-26",
+    "commons_sha1": "5ddd145ed3392abbd2605ea4244a3bfabd13f54e",
+    "source_file": "production\\hokkaido_vlog\\references\\source\\scene05.jpg",
+    "source_sha256": "f1ba897adf1f401cce2441996b597310bf8d798570529c6495eaf65bf24ffedc",
+    "source_dimensions": [
+      1920,
+      1280
+    ],
+    "prepared_file": "production\\hokkaido_vlog\\references\\prepared\\scene05.png",
+    "prepared_sha256": "c02925d73735f993008fae09e13434de999a17f47db65ad4bb19e2c6dbe02a1b",
+    "prepared_dimensions": [
+      608,
+      352
+    ],
+    "crop_box": [
+      0,
+      84,
+      1920,
+      1196
+    ],
+    "comfy_input": "hokkaido_vlog/scene05.png",
+    "h3_prompt": "Photorealistic winter first-person travel vlog walking on snowy Sakaimachi Street in Otaru. Begin exactly from the real reference photograph and preserve the historic storefronts, street width, rooflines, utility poles, overcast winter daylight, and snow banks. Gentle stabilized forward walking motion, small distant visitors move naturally, shop flags shift in a light breeze, subtle handheld parallax. Do not remove the snow, change architecture, or invent prominent signs. No readable generated text, no logos, no close-up faces, no warped people, no fantasy objects."
+  },
+  {
+    "scene_id": "06",
+    "location": "札幌・藻岩山",
+    "commons_title": "File:Japan Sapporo Mt.Moiwa 0049.jpg",
+    "commons_page_url": "https://commons.wikimedia.org/wiki/File:Japan_Sapporo_Mt.Moiwa_0049.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Japan_Sapporo_Mt.Moiwa_0049.jpg/1920px-Japan_Sapporo_Mt.Moiwa_0049.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Japan_Sapporo_Mt.Moiwa_0049.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "creator": "Ermell",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "View from Mount Moiva in Sapporo",
+    "date": "2009-10-12 12:26:14",
+    "commons_sha1": "b489e8c3c0c4a5baa115333483e00d1d52e04ee9",
+    "source_file": "production\\hokkaido_vlog\\references\\source\\scene06.jpg",
+    "source_sha256": "19b2332390ead53cf12020eb84016937969d24e3464fe3b72d9e28a521563889",
+    "source_dimensions": [
+      1920,
+      1440
+    ],
+    "prepared_file": "production\\hokkaido_vlog\\references\\prepared\\scene06.png",
+    "prepared_sha256": "7db84dac33df813db97293078332612d40b1b7d63c45982156fb33f644190746",
+    "prepared_dimensions": [
+      608,
+      352
+    ],
+    "crop_box": [
+      0,
+      164,
+      1920,
+      1276
+    ],
+    "comfy_input": "hokkaido_vlog/scene06.png",
+    "h3_prompt": "Photorealistic panoramic travel vlog view from Mount Moiwa in Sapporo. Begin exactly from the supplied real photograph and preserve the observation viewpoint, city basin, mountain ridges, horizon, and weather. Very slow cinematic pan with realistic depth, clouds drift gently, distant city haze changes subtly, foreground vegetation moves in a soft breeze. No invented skyline, no changing geography, no text, no logos, no people added, no surreal sky, no excessive timelapse."
+  },
+  {
+    "scene_id": "07",
+    "location": "美瑛・白金青い池",
+    "commons_title": "File:Shirogane Blue Pond, Biei, Hokkaido Japan.jpg",
+    "commons_page_url": "https://commons.wikimedia.org/wiki/File:Shirogane_Blue_Pond,_Biei,_Hokkaido_Japan.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Shirogane_Blue_Pond%2C_Biei%2C_Hokkaido_Japan.jpg/1920px-Shirogane_Blue_Pond%2C_Biei%2C_Hokkaido_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Shirogane_Blue_Pond%2C_Biei%2C_Hokkaido_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "creator": "AndyLeungHK",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "description": "The blue pond of Shirogane",
+    "date": "2017-07-09 16:21:33",
+    "commons_sha1": "3caeabf3874f1a37a5619149d4288acbd146c913",
+    "source_file": "production\\hokkaido_vlog\\references\\source\\scene07.jpg",
+    "source_sha256": "383c6cccafee1b21fe14f5ea35eb9d30c0e3213a7219be1fd7e5ebbaa3da1df8",
+    "source_dimensions": [
+      1920,
+      1280
+    ],
+    "prepared_file": "production\\hokkaido_vlog\\references\\prepared\\scene07.png",
+    "prepared_sha256": "ed1bf38afdd4a9855d0c4057718ff07c55d47bf28fef62a462c2f42223b0c787",
+    "prepared_dimensions": [
+      608,
+      352
+    ],
+    "crop_box": [
+      0,
+      84,
+      1920,
+      1196
+    ],
+    "comfy_input": "hokkaido_vlog/scene07.png",
+    "h3_prompt": "Photorealistic serene travel vlog at Shirogane Blue Pond in Biei. Begin exactly from the real reference photograph and preserve the blue water color, standing tree trunks, forest line, composition, and season. Slow gentle push toward the pond, tiny water ripples and accurate reflections, leaves and grasses move lightly, calm natural daylight. Preserve the real landscape and tree positions. No people, no animals, no color fantasy, no new objects, no text, no logos, no warped trees."
+  },
+  {
+    "scene_id": "08",
+    "location": "美瑛・四季彩の丘",
+    "commons_title": "File:Shikisai-no-oka.jpg",
+    "commons_page_url": "https://commons.wikimedia.org/wiki/File:Shikisai-no-oka.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Shikisai-no-oka.jpg/1920px-Shikisai-no-oka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Shikisai-no-oka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "creator": "lumoplank",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "description": "Shikisai-no-oka in summer",
+    "date": "2024-01-03 19:31:19",
+    "commons_sha1": "897e1dd5018303111ef3c661ed333725b7a3b333",
+    "source_file": "production\\hokkaido_vlog\\references\\source\\scene08.jpg",
+    "source_sha256": "9a413743dbef27cd6cf324c2cffb765cabac4a1f98ee949fe59d4e9775130e7b",
+    "source_dimensions": [
+      1920,
+      1280
+    ],
+    "prepared_file": "production\\hokkaido_vlog\\references\\prepared\\scene08.png",
+    "prepared_sha256": "25133b2665064e9ada9b945ce63146a12a78526ecc72038abd3e339d695695ec",
+    "prepared_dimensions": [
+      608,
+      352
+    ],
+    "crop_box": [
+      0,
+      84,
+      1920,
+      1196
+    ],
+    "comfy_input": "hokkaido_vlog/scene08.png",
+    "h3_prompt": "Photorealistic summer Hokkaido travel vlog at Shikisai no Oka in Biei. Start exactly from the real reference photograph and preserve the striped flower fields, rolling hills, distant mountains, path lines, and real color arrangement. Smooth low-speed lateral camera slide creates subtle parallax, flowers sway in a light breeze, soft clouds move slowly, realistic sunlight. Do not invent buildings or change field geometry. No people close-up, no text, no logos, no oversaturated fantasy colors, no warping."
+  },
+  {
+    "scene_id": "09",
+    "location": "富良野・ファーム富田",
+    "commons_title": "File:Furano Lavender FarmTomita.jpg",
+    "commons_page_url": "https://commons.wikimedia.org/wiki/File:Furano_Lavender_FarmTomita.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Furano_Lavender_FarmTomita.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Furano_Lavender_FarmTomita.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "creator": "Kentagon",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "ja：中富良野町にある観光農園「ファーム富田」のラベンダー\nlocation:  Nakafurano\ncaption:  Lavender of Farm TOMITA （Hokkaido,Japan）",
+    "date": "2009-07-09",
+    "commons_sha1": "b2a46762bb21404ba48afc88187172be48191cd5",
+    "source_file": "production\\hokkaido_vlog\\references\\source\\scene09.jpg",
+    "source_sha256": "8dc5318abe35ffb6f40b2c219b8d55c51ba3a962812599e24218f46a47d428b0",
+    "source_dimensions": [
+      1600,
+      1200
+    ],
+    "prepared_file": "production\\hokkaido_vlog\\references\\prepared\\scene09.png",
+    "prepared_sha256": "726a4746c3d3d7396001a1bf21739b9731be2ab46686aec1b05bbd52ff60f2af",
+    "prepared_dimensions": [
+      608,
+      352
+    ],
+    "crop_box": [
+      0,
+      137,
+      1600,
+      1063
+    ],
+    "comfy_input": "hokkaido_vlog/scene09.png",
+    "h3_prompt": "Photorealistic cinematic macro travel vlog at Farm Tomita, Furano. Begin exactly from the real close-up reference photograph and preserve the lavender blossoms, shallow depth of field, butterfly position and markings, green background, season, and composition. The camera makes an extremely slow macro push, lavender flowers move gently in the breeze, and the single butterfly makes only subtle natural wing and antenna movements while remaining on the flower. Do not widen into an invented landscape, do not add insects or people, no giant flowers, no text, no logos, no fantasy color grading, no visual distortion."
+  },
+  {
+    "scene_id": "10",
+    "location": "富良野・ラベンダーソフト",
+    "commons_title": "File:Lavender soft serve at Farm Tomita.jpg",
+    "commons_page_url": "https://commons.wikimedia.org/wiki/File:Lavender_soft_serve_at_Farm_Tomita.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Lavender_soft_serve_at_Farm_Tomita.jpg/1920px-Lavender_soft_serve_at_Farm_Tomita.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Lavender_soft_serve_at_Farm_Tomita.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "creator": "Douglas Perkins",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "description": "Lavender soft serve ice cream.  Farm Tomita.  Furano, Hokkaido, Japan.",
+    "date": "2015-08-15 11:16:39",
+    "commons_sha1": "91a811f63bf17225dd12934493b743cb82c133cd",
+    "source_file": "production\\hokkaido_vlog\\references\\source\\scene10.jpg",
+    "source_sha256": "a33bdbab5178d38dba0603cd168d7eb138e2a8c3b86ab29e577e7046b6d42bac",
+    "source_dimensions": [
+      1920,
+      1440
+    ],
+    "prepared_file": "production\\hokkaido_vlog\\references\\prepared\\scene10.png",
+    "prepared_sha256": "d05dbdf042a494d58f72995ef4c4fde50bd30e55c770828a9e406831c15259d5",
+    "prepared_dimensions": [
+      608,
+      352
+    ],
+    "crop_box": [
+      0,
+      164,
+      1920,
+      1276
+    ],
+    "comfy_input": "hokkaido_vlog/scene10.png",
+    "h3_prompt": "Photorealistic close travel vlog food shot. Start exactly from the real reference photograph of lavender soft serve at Farm Tomita and preserve the white cup lying at a diagonal angle on the dark textured surface, the purple soft-serve swirl, framing, and natural lighting. Very slight handheld camera movement and realistic shallow depth of field while the cup and ice cream remain stable and believable. Do not add a hand or stand the cup upright. No changing container, no melting transformation, no readable generated text, no new logos, no duplicated food, no surreal motion."
+  },
+  {
+    "scene_id": "11",
+    "location": "登別・地獄谷",
+    "commons_title": "File:Jigokudani (Hell Valley), Noboribetsu Onsen, Hokkaido, April 2023 05.jpg",
+    "commons_page_url": "https://commons.wikimedia.org/wiki/File:Jigokudani_(Hell_Valley),_Noboribetsu_Onsen,_Hokkaido,_April_2023_05.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Jigokudani_%28Hell_Valley%29%2C_Noboribetsu_Onsen%2C_Hokkaido%2C_April_2023_05.jpg/1920px-Jigokudani_%28Hell_Valley%29%2C_Noboribetsu_Onsen%2C_Hokkaido%2C_April_2023_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Jigokudani_%28Hell_Valley%29%2C_Noboribetsu_Onsen%2C_Hokkaido%2C_April_2023_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "creator": "Calistemon",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Jigokudani, or Hell Valley, Noboribetsu Onsen, Hokkaido, Japan.",
+    "date": "2023-04-06 08:38:50",
+    "commons_sha1": "4b4e9c96f4bb219c9b5df662b129cafdc4e87875",
+    "source_file": "production\\hokkaido_vlog\\references\\source\\scene11.jpg",
+    "source_sha256": "e988b6757c125bc4afe0da17afe475444b5c4df0d676c6b89acd16119d25f7d1",
+    "source_dimensions": [
+      1920,
+      1440
+    ],
+    "prepared_file": "production\\hokkaido_vlog\\references\\prepared\\scene11.png",
+    "prepared_sha256": "47dc881a62c6c19cb52c2a40fa6cbb80c29e535c28b4d25a6fd19c2b435917e4",
+    "prepared_dimensions": [
+      608,
+      352
+    ],
+    "crop_box": [
+      0,
+      164,
+      1920,
+      1276
+    ],
+    "comfy_input": "hokkaido_vlog/scene11.png",
+    "h3_prompt": "Photorealistic documentary travel vlog at Jigokudani Hell Valley in Noboribetsu, Hokkaido. Begin exactly from the real reference photograph and preserve the volcanic valley, boardwalk or path, rocky slopes, vegetation, and viewpoint. Slow careful push forward, natural white steam rises and drifts with the wind, subtle cloud movement, realistic mineral colors and daylight. No lava, no eruption, no dramatic disaster, no added structures, no text, no logos, no warped landscape, no fantasy."
+  },
+  {
+    "scene_id": "12",
+    "location": "洞爺湖",
+    "commons_title": "File:Lake Toya 20140807.jpg",
+    "commons_page_url": "https://commons.wikimedia.org/wiki/File:Lake_Toya_20140807.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Lake_Toya_20140807.jpg/1920px-Lake_Toya_20140807.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Lake_Toya_20140807.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "creator": "Suicasmo",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Lake Toya",
+    "date": "2014-08-07 18:50:51",
+    "commons_sha1": "576b854ffa3256b76c6ba5a4ba98bfd989499206",
+    "source_file": "production\\hokkaido_vlog\\references\\source\\scene12.jpg",
+    "source_sha256": "5053c08948c9b97e1aaad2de5d95fe8da1b364e7d0193f406c5306a320138e25",
+    "source_dimensions": [
+      1920,
+      1285
+    ],
+    "prepared_file": "production\\hokkaido_vlog\\references\\prepared\\scene12.png",
+    "prepared_sha256": "e8750b9237a7fad70d054b09d1041a8c4a6b3088bf4437b973654d19eb165101",
+    "prepared_dimensions": [
+      608,
+      352
+    ],
+    "crop_box": [
+      0,
+      86,
+      1920,
+      1198
+    ],
+    "comfy_input": "hokkaido_vlog/scene12.png",
+    "h3_prompt": "Photorealistic calm Hokkaido travel vlog at Lake Toya. Start exactly from the real reference photograph and preserve the foreground sign, railing, flowers, shoreline, lake, islands or mountains, horizon, and weather. Locked-off camera with a very slow pan, realistic sunlight sparkles on small water ripples, thin clouds drift, nearby leaves and flowers move gently. Quiet natural documentary mood. No boats or buildings added, no changed geography, do not erase or rewrite the existing sign, no new text, no logos, no people, no surreal colors or motion."
+  },
+  {
+    "scene_id": "13",
+    "location": "函館・朝市",
+    "commons_title": "File:Hakodate Morning Market, Hakodate Asaichi, Hakodate, 2014.jpg",
+    "commons_page_url": "https://commons.wikimedia.org/wiki/File:Hakodate_Morning_Market,_Hakodate_Asaichi,_Hakodate,_2014.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Hakodate_Morning_Market%2C_Hakodate_Asaichi%2C_Hakodate%2C_2014.jpg/1920px-Hakodate_Morning_Market%2C_Hakodate_Asaichi%2C_Hakodate%2C_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Hakodate_Morning_Market%2C_Hakodate_Asaichi%2C_Hakodate%2C_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "creator": "bryan...",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "description": "Hakodate Morning Market, Hakodate Asaichi, Hakodate, 2014.",
+    "date": "2015-02-26 10:28:11",
+    "commons_sha1": "b5cc325a64fa6e623d046cc086bfdf2db7bf84a8",
+    "source_file": "production\\hokkaido_vlog\\references\\source\\scene13.jpg",
+    "source_sha256": "9998c4fceef9ae427cf918675825d8df22924f503c8eb45100fdd4d2d5406ba3",
+    "source_dimensions": [
+      1920,
+      1440
+    ],
+    "prepared_file": "production\\hokkaido_vlog\\references\\prepared\\scene13.png",
+    "prepared_sha256": "7e0b07fff7aba48ac7d669709120cd7dbd2089c92aa775e15bb5c8687a1e05c3",
+    "prepared_dimensions": [
+      608,
+      352
+    ],
+    "crop_box": [
+      0,
+      164,
+      1920,
+      1276
+    ],
+    "comfy_input": "hokkaido_vlog/scene13.png",
+    "h3_prompt": "Photorealistic lively but natural travel vlog at Hakodate Morning Market. Begin exactly from the provided real photograph and preserve the market stalls, aisle, products, awnings, and perspective. Slow stabilized walking motion, distant shoppers and vendors move naturally, hanging items shift slightly, bright morning light. Keep people small and non-identifiable. No invented merchandise, no readable generated text, no logos, no close-up faces, no warped hands, no surreal motion."
+  },
+  {
+    "scene_id": "14",
+    "location": "函館・元町",
+    "commons_title": "File:Motomachi Catholic Church in Hakodate Hokkaido Japan01n.jpg",
+    "commons_page_url": "https://commons.wikimedia.org/wiki/File:Motomachi_Catholic_Church_in_Hakodate_Hokkaido_Japan01n.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Motomachi_Catholic_Church_in_Hakodate_Hokkaido_Japan01n.jpg/1920px-Motomachi_Catholic_Church_in_Hakodate_Hokkaido_Japan01n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Motomachi_Catholic_Church_in_Hakodate_Hokkaido_Japan01n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "creator": "663highland",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "description": "Motomachi Catholic Church in Hakodate, Hokkaido prefecture, Japan",
+    "date": "2012-07-26",
+    "commons_sha1": "d9eb1bc165d8916b99eee693c45c1102558766e0",
+    "source_file": "production\\hokkaido_vlog\\references\\source\\scene14.jpg",
+    "source_sha256": "26d50375d071fae229cba2d46dd724d750fbff86d1f800e5f08a6822f6151102",
+    "source_dimensions": [
+      1920,
+      1276
+    ],
+    "prepared_file": "production\\hokkaido_vlog\\references\\prepared\\scene14.png",
+    "prepared_sha256": "df064984f194d6fc57b2038854567b68d95d41ba5ed5d35df5acbe225bc6d9c3",
+    "prepared_dimensions": [
+      608,
+      352
+    ],
+    "crop_box": [
+      0,
+      82,
+      1920,
+      1194
+    ],
+    "comfy_input": "hokkaido_vlog/scene14.png",
+    "h3_prompt": "Photorealistic architectural travel vlog in Hakodate Motomachi. Begin exactly from the real reference photograph and preserve the Catholic church facade, tower, roof, surrounding trees, street, and perspective. Slow gentle upward camera tilt and slight push closer, leaves move in the sea breeze, clouds drift naturally, realistic daylight. Do not alter the church architecture, cross, windows, or street geometry. No new signage, no readable text, no logos, no close-up people, no warping, no fantasy."
+  },
+  {
+    "scene_id": "15",
+    "location": "函館山",
+    "commons_title": "File:Mount-Hakodate Night-view.jpg",
+    "commons_page_url": "https://commons.wikimedia.org/wiki/File:Mount-Hakodate_Night-view.jpg",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Mount-Hakodate_Night-view.jpg/1920px-Mount-Hakodate_Night-view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Mount-Hakodate_Night-view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "creator": "MaedaAkihiko",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "description": "Night view of Hakodate City from the summit of Mt. Hakodate (60 second exposure)",
+    "date": "2022-09-08",
+    "commons_sha1": "749ccc8a69a4ea43eeeb3694d16c2c963ad0be68",
+    "source_file": "production\\hokkaido_vlog\\references\\source\\scene15.jpg",
+    "source_sha256": "95fd5c923b0bd90c55b6752c32ed3a65217b61ed235efbd4ddd8d37c069c9284",
+    "source_dimensions": [
+      1920,
+      1280
+    ],
+    "prepared_file": "production\\hokkaido_vlog\\references\\prepared\\scene15.png",
+    "prepared_sha256": "aab8aac800c1626ecfeb6cf5168a25984b04ef6bba4bcb398f8d37f6552c52b0",
+    "prepared_dimensions": [
+      608,
+      352
+    ],
+    "crop_box": [
+      0,
+      84,
+      1920,
+      1196
+    ],
+    "comfy_input": "hokkaido_vlog/scene15.png",
+    "h3_prompt": "Photorealistic night travel vlog from Mount Hakodate. Begin exactly from the supplied real long-exposure photograph and preserve the iconic hourglass-shaped city lights, coastline, dark bay, horizon, and viewpoint. Nearly locked camera with an extremely slow cinematic push, distant city lights twinkle subtly, faint clouds drift, realistic night exposure and atmospheric haze. Do not change the coastline or city layout. No fireworks, no aurora, no added text, no logos, no people, no fantasy lighting, no warped geography."
+  }
+]

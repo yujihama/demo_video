@@ -1,0 +1,3 @@
+Hokkaido Fictional Vlog is offered under CC BY-SA 4.0.
+Attribution for each reference work is listed in SOURCES.md and reference_manifest.json.
+License: https://creativecommons.org/licenses/by-sa/4.0/
