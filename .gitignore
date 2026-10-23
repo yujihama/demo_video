@@ -5,3 +5,8 @@ dist
 
 # Ignore the output video from Git but not videos you import into src/.
 out
+
+# Repository City render diagnostics (keep the compact JSON report only).
+demo/repository-city-frames/
+demo/repository-city-final-qc/*.png
+demo/repository_city_5min_preview.png
