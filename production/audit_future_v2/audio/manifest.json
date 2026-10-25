@@ -1,0 +1,87 @@
+{
+  "take_seconds": 43.25,
+  "mean_chars_per_second": 5.84,
+  "sha256_take": "4a01e792408e0270b67a030224c6c9f8207fcf6610ca3cf6cd8dcc254ac4411f",
+  "lines": [
+    {
+      "id": "01",
+      "scene": 1,
+      "text": "監査人の一日は、各子会社のリスクスコアの確認から始まります。",
+      "duration_seconds": 5.14,
+      "chars": 28,
+      "chars_per_second": 5.45,
+      "fits": true,
+      "rate_deviation_pct": -6.7
+    },
+    {
+      "id": "02",
+      "scene": 2,
+      "text": "スコアの根拠には、過去の不正事例や監査の知見が組み込まれています。",
+      "duration_seconds": 5.18,
+      "chars": 31,
+      "chars_per_second": 5.98,
+      "fits": true,
+      "rate_deviation_pct": 2.4
+    },
+    {
+      "id": "03",
+      "scene": 3,
+      "text": "監査人は、AIとの対話を通じて、仮説と手続を整理します。",
+      "duration_seconds": 4.98,
+      "chars": 25,
+      "chars_per_second": 5.02,
+      "fits": true,
+      "rate_deviation_pct": -14.0
+    },
+    {
+      "id": "04",
+      "scene": 4,
+      "text": "AIは、関連するドキュメントから参考になる箇所を示します。",
+      "duration_seconds": 4.42,
+      "chars": 27,
+      "chars_per_second": 6.11,
+      "fits": true,
+      "rate_deviation_pct": 4.6
+    },
+    {
+      "id": "05",
+      "scene": 5,
+      "text": "監査人は根拠を確認し、調書に記録します。",
+      "duration_seconds": 3.44,
+      "chars": 18,
+      "chars_per_second": 5.23,
+      "fits": true,
+      "rate_deviation_pct": -10.4
+    },
+    {
+      "id": "06",
+      "scene": 6,
+      "text": "気づきは、すぐにチームに共有されます。",
+      "duration_seconds": 2.44,
+      "chars": 17,
+      "chars_per_second": 6.97,
+      "fits": true,
+      "rate_deviation_pct": 19.4
+    },
+    {
+      "id": "07",
+      "scene": 7,
+      "text": "AIも議論に加わり、論点を整理し、議論の内容に応じて過去の類似案件を表示します。",
+      "duration_seconds": 6.46,
+      "chars": 37,
+      "chars_per_second": 5.73,
+      "fits": true,
+      "rate_deviation_pct": -1.9
+    },
+    {
+      "id": "08",
+      "scene": 8,
+      "text": "判断の履歴も蓄積され、今後のAIが参考にできるようになります。",
+      "duration_seconds": 4.66,
+      "chars": 29,
+      "chars_per_second": 6.22,
+      "fits": true,
+      "rate_deviation_pct": 6.5
+    }
+  ]
+}

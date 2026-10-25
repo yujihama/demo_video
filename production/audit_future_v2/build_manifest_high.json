@@ -1,0 +1,94 @@
+{
+  "output": "C:\\Users\\nyham\\Documents\\Codex\\2026-08-07\\pc-minmax-h3-x-ui\\end-card\\demo\\audit_future_v2_high.mp4",
+  "res": "high",
+  "fps": 24,
+  "render_size": [
+    1920,
+    1080
+  ],
+  "frames": 1452,
+  "seconds": 60.5,
+  "scene_start_frames": [
+    0,
+    180,
+    360,
+    540,
+    720,
+    900,
+    1080,
+    1260
+  ],
+  "crossfade_frames": 12,
+  "narration": [
+    {
+      "id": "01",
+      "scene": 1,
+      "text": "監査人の一日は、各子会社のリスクスコアの確認から始まります。",
+      "start": 0.5,
+      "duration": 5.14,
+      "end": 5.64
+    },
+    {
+      "id": "02",
+      "scene": 2,
+      "text": "スコアの根拠には、過去の不正事例や監査の知見が組み込まれています。",
+      "start": 8.0,
+      "duration": 5.18,
+      "end": 13.18
+    },
+    {
+      "id": "03",
+      "scene": 3,
+      "text": "監査人は、AIとの対話を通じて、仮説と手続を整理します。",
+      "start": 15.5,
+      "duration": 4.98,
+      "end": 20.48
+    },
+    {
+      "id": "04",
+      "scene": 4,
+      "text": "AIは、関連するドキュメントから参考になる箇所を示します。",
+      "start": 23.0,
+      "duration": 4.42,
+      "end": 27.42
+    },
+    {
+      "id": "05",
+      "scene": 5,
+      "text": "監査人は根拠を確認し、調書に記録します。",
+      "start": 30.5,
+      "duration": 3.44,
+      "end": 33.94
+    },
+    {
+      "id": "06",
+      "scene": 6,
+      "text": "気づきは、すぐにチームに共有されます。",
+      "start": 38.0,
+      "duration": 2.44,
+      "end": 40.44
+    },
+    {
+      "id": "07",
+      "scene": 7,
+      "text": "AIも議論に加わり、論点を整理し、議論の内容に応じて過去の類似案件を表示します。",
+      "start": 45.5,
+      "duration": 6.46,
+      "end": 51.96
+    },
+    {
+      "id": "08",
+      "scene": 8,
+      "text": "判断の履歴も蓄積され、今後のAIが参考にできるようになります。",
+      "start": 53.0,
+      "duration": 4.66,
+      "end": 57.66
+    }
+  ],
+  "bgm": "end-card/public/accounting-future-v3/bgm.wav (looped, -34 dBFS RMS)",
+  "source_model_audio": "muted",
+  "ending_card": false,
+  "logos": false,
+  "company_name": false,
+  "sha256": "e150a65b406f489c5c068e9374742f8163a682f03ba0471c9abf84fd8a10df48"
+}
