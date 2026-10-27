@@ -1,6 +1,19 @@
 # 監査の、その先へ — 不正検知モデルの将来像
 
-## v2（2026-10-25、現行版）
+## v3（2026-10-26、現行版）：具体的な不正検知画面を監査人が操作する
+
+v2の派生。要望は「画面は空間UIではなく大画面PCモニター」「不正検知モデルの画面に現実感のある具体性（日本語UI）」「監査人が実際に操作する」。
+
+- **方式**：アプリ画面はRemotionで実装（`end-card/src/audit-future-v3/`、日本語UI、架空データ）し1080pで直接レンダリング。人物ショットはユーザー作成の開始フレーム（モニター画面は暗い無地・平面）からMiniMax H3で生成（カメラ固定）。人物ショットのモニター四隅に画面クリップを透視変換で合成（`production/audit_future_v3/composite.py`、前景の人物は画面色キーで残す）。画面フルのカットと人物（合成）カットを交互に配置。
+- **H3に画面を描かせる検証**は不採用（`production/audit_future_v3/revisions/h3_ui_test/`）。操作の動きは再現できたが、小さな文字は崩れ、遷移後の画面は架空の文字列になった。
+- **構成**（10シーン×8秒、0.5秒クロスフェード、75.5秒、1,812フレーム）：P1 朝モニター前（ダッシュボード合成）→ S2 ドリルダウン → P2 横顔とキーボード（AIに質問を合成）→ S3 AIに質問 → S4 論点管理・自律分析 → P3 壁面モニター前の3人（追加資料画面を合成）→ S5 追加資料と深掘り → S6 成果物ドラフト → P4 パートナーの承認（成果物画面を合成）→ P5 翌朝の無人デスク（更新されたダッシュボードを合成）。
+- **画面**：S1 分布（ヒストグラム＋上位一覧、クリック）／S2 科目区分の内訳と指標（区分選択→AIに質問）／S3 AIの背景説明（参照元、推測される背景、契約書該当箇所）／S4 論点・自律分析の進行・クライアント確認事項／S5 受領資料の投入・更新分析・同業比較・経営指標・AIの示唆／S6 追加手続案・調書メモ・会社報告ドラフト／S7 翌朝のダッシュボード（87→71、判断履歴の蓄積）。
+- **ナレーション**：9行を一括収録（`production/audit_future_v3/narration.json`、`audio/`）、各シーン開始0.5秒後。人物シーンP2には当てず、画面シーンS3に合わせた。
+- **出力**：`end-card/demo/audit_future_v3_high.mp4`（1080p）、`audit_future_v3_high_720p_preview.mp4`。検証：1,812フレーム完全デコード、音声75.52秒、ピーク0.878、黒画面なし。
+- **制作ファイル**：`production/audit_future_v3/`（plan.md、reference_prompts.md、scene_plan.json、narration.json、generate.py、build.py（カット表方式）、composite.py、composite_plan.json、cut_final.json、validate.py、screens/、clips/high/、composite/、qc/、final_qc/）。
+- **再現**：画面 `end-card> .\node_modules\.bin\remotion.cmd render src/audit-future-v3/index.ts V3Top ../production/audit_future_v3/screens/V3Top.mp4 --codec=h264 --crf=16`（V3Drilldown/V3Ask/V3Issues/V3Deepen/V3Outputs/V3Next も同様）→ 人物 `generate.py --res high --start 1 --end 5` → 合成 `composite.py --person ... --ui ... --out ... --start <四隅> --end <四隅> --opacity 1.0 --darken 0.86 [--key 48]` → 組立 `build.py --cut cut_final.json --out end-card/demo/audit_future_v3_high.mp4` → 検証 `validate.py --path ...`。
+
+## v2（2026-10-25）
 
 v1のレビューで「前作の参照画像の流用で未来感がない」「うなずくだけのシーンや似た構図が冗長」「エンディングは不要」と指摘を受け、v2として作り直した。
 

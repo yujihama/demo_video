@@ -1,0 +1,12 @@
+[
+  {"clip": "production/audit_future_v3/composite/p01_top.mp4", "nar": ["01"]},
+  {"clip": "production/audit_future_v3/screens/V3Drilldown.mp4", "nar": ["02"]},
+  {"clip": "production/audit_future_v3/composite/p02_ask.mp4", "nar": []},
+  {"clip": "production/audit_future_v3/screens/V3Ask.mp4", "nar": ["03"]},
+  {"clip": "production/audit_future_v3/screens/V3Issues.mp4", "nar": ["04"]},
+  {"clip": "production/audit_future_v3/composite/p03_deepen.mp4", "nar": ["05"]},
+  {"clip": "production/audit_future_v3/screens/V3Deepen.mp4", "nar": ["06"]},
+  {"clip": "production/audit_future_v3/screens/V3Outputs.mp4", "nar": ["07"]},
+  {"clip": "production/audit_future_v3/composite/p04_outputs.mp4", "nar": ["08"]},
+  {"clip": "production/audit_future_v3/composite/p05_next.mp4", "nar": ["09"]}
+]

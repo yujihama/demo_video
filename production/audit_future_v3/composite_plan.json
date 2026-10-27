@@ -1,0 +1,13 @@
+{
+  "_note": "Screen corners in 1920x1080 frame coordinates (TL,TR,BR,BL) measured on the start frames. Camera is locked, so end=start unless the generated clip drifts; verify on the last frame before compositing.",
+  "p01": {"person": "production/audit_future_v3/clips/high/scene01.mp4", "ui": "production/audit_future_v3/screens/V3Top.mp4",
+          "out": "production/audit_future_v3/composite/p01_top.mp4", "quad": "814,200,1836,176,1836,790,814,700"},
+  "p02": {"person": "production/audit_future_v3/clips/high/scene02.mp4", "ui": "production/audit_future_v3/screens/V3Ask.mp4",
+          "out": "production/audit_future_v3/composite/p02_ask.mp4", "quad": "1026,257,1840,172,1840,804,1026,692"},
+  "p03": {"person": "production/audit_future_v3/clips/high/scene03.mp4", "ui": "production/audit_future_v3/screens/V3Deepen.mp4",
+          "out": "production/audit_future_v3/composite/p03_deepen.mp4", "quad": "558,101,1376,101,1376,526,558,526"},
+  "p04": {"person": "production/audit_future_v3/clips/high/scene04.mp4", "ui": "production/audit_future_v3/screens/V3Outputs.mp4",
+          "out": "production/audit_future_v3/composite/p04_outputs.mp4", "quad": "545,86,1366,86,1366,516,545,516"},
+  "p05": {"person": "production/audit_future_v3/clips/high/scene05.mp4", "ui": "production/audit_future_v3/screens/V3Next.mp4",
+          "out": "production/audit_future_v3/composite/p05_next.mp4", "quad": "500,219,1420,219,1420,692,500,692"}
+}
