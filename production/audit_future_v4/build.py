@@ -8,6 +8,7 @@ Cut list format (one object per cut):
    "frames": 192,                          # frames used from the clip (default 192)
    "offset": 0,                            # frames skipped at the start of the clip (default 0)
    "xfade": 0,                             # crossfade INTO this cut, in frames (default 0 = hard cut)
+   "play": 136,                            # optional: source frames to use; the rest of "frames" is the tail at half speed
    "nar": ["02"],                          # narration ids placed 0.5 s after the cut starts
    "sfx": [{"f": 72, "kind": "tap"}]}      # UI sounds at clip-relative frames: tap, swipe, arrive, chime, send, hum:<frames>
 Audio of source clips is ignored.
@@ -66,6 +67,26 @@ def clip_frames(path, frames=192, offset=0):
     while n < frames and last is not None:
         yield last
         n += 1
+
+
+def cut_frames(path, frames=192, offset=0, play=None):
+    """Like clip_frames, but only `play` source frames are used; when `frames` is longer, the last
+    (frames - play) source frames are stretched to twice their length with linear blending, so the
+    cut ramps into half speed instead of freezing or showing unusable footage."""
+    if not play or play >= frames:
+        yield from clip_frames(path, frames=frames, offset=offset)
+        return
+    extra = frames - play
+    src = list(clip_frames(path, frames=play, offset=offset))
+    head, tail = src[:play - extra], src[play - extra:]
+    for img in head:
+        yield img
+    for k in range(2 * extra):
+        pos = k / 2
+        i = min(int(pos), len(tail) - 1)
+        j = min(i + 1, len(tail) - 1)
+        t = pos - i
+        yield tail[i] * (1 - t) + tail[j] * t
 
 
 # ---------- sound design (synthesised, no external assets) ----------
@@ -230,7 +251,7 @@ def main():
         pos += n
     total = pos
     audio, placements = audio_mix(cuts, starts, total)
-    generators = [clip_frames(ROOT / cut["clip"], frames=lengths[i], offset=int(cut.get("offset", 0))) for i, cut in enumerate(cuts)]
+    generators = [cut_frames(ROOT / cut["clip"], frames=lengths[i], offset=int(cut.get("offset", 0)), play=cut.get("play")) for i, cut in enumerate(cuts)]
     rng = np.random.default_rng(11)
     with av.open(str(output), "w", options={"movflags": "+faststart"}) as container:
         container.metadata["comment"] = "AI-assisted fictional audit concept film. All companies, figures and documents are fictional."
