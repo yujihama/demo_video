@@ -1,0 +1,13 @@
+{
+  "path": "end-card\\demo\\audit_future_v4_high.mp4",
+  "frames": 2124,
+  "expected_frames": 2124,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24.0,
+  "video_seconds": 88.5,
+  "audio_seconds": 88.512,
+  "audio_peak": 0.868,
+  "black_frames_mid": [],
+  "ok": true
+}

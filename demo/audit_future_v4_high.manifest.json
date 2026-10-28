@@ -1,0 +1,293 @@
+{
+  "output": "C:\\Users\\nyham\\Documents\\Codex\\2026-08-07\\pc-minmax-h3-x-ui\\end-card\\demo\\audit_future_v4_high.mp4",
+  "frames": 2124,
+  "seconds": 88.5,
+  "starts": [
+    0,
+    60,
+    252,
+    404,
+    596,
+    788,
+    980,
+    1172,
+    1364,
+    1556,
+    1736,
+    1916,
+    2052
+  ],
+  "cuts": [
+    {
+      "clip": "production/audit_future_v4/screens/V4Hook.mp4",
+      "frames": 72,
+      "nar": [],
+      "sfx": [
+        {
+          "kind": "hum:60",
+          "f": 6,
+          "db": -34
+        }
+      ]
+    },
+    {
+      "clip": "production/audit_future_v4/composite/p01_top.mp4",
+      "frames": 192,
+      "xfade": 12,
+      "nar": [
+        "01"
+      ],
+      "sfx": [
+        {
+          "kind": "tap",
+          "f": 64
+        },
+        {
+          "kind": "tap",
+          "f": 112
+        }
+      ]
+    },
+    {
+      "clip": "production/audit_future_v4/screens/V4Drilldown.mp4",
+      "frames": 152,
+      "nar": [
+        "02"
+      ],
+      "sfx": [
+        {
+          "kind": "tap",
+          "f": 32
+        },
+        {
+          "kind": "tap",
+          "f": 110
+        },
+        {
+          "kind": "chime",
+          "f": 114,
+          "db": -30
+        }
+      ],
+      "offset": 40
+    },
+    {
+      "clip": "production/audit_future_v4/composite/p02_ask.mp4",
+      "frames": 192,
+      "nar": [],
+      "sfx": [
+        {
+          "kind": "hum:40",
+          "f": 112,
+          "db": -36
+        }
+      ]
+    },
+    {
+      "clip": "production/audit_future_v4/screens/V4Ask.mp4",
+      "frames": 192,
+      "offset": 192,
+      "nar": [
+        "03"
+      ],
+      "sfx": [
+        {
+          "kind": "tap",
+          "f": 78
+        }
+      ]
+    },
+    {
+      "clip": "production/audit_future_v4/screens/V4Issues.mp4",
+      "frames": 192,
+      "nar": [
+        "04"
+      ],
+      "sfx": [
+        {
+          "kind": "tap",
+          "f": 56
+        },
+        {
+          "kind": "hum:96",
+          "f": 60,
+          "db": -36
+        },
+        {
+          "kind": "chime",
+          "f": 156,
+          "db": -30
+        }
+      ]
+    },
+    {
+      "clip": "production/audit_future_v4/composite/p03_tablet.mp4",
+      "frames": 192,
+      "nar": [],
+      "sfx": [
+        {
+          "kind": "swipe",
+          "f": 24
+        },
+        {
+          "kind": "arrive",
+          "f": 38
+        },
+        {
+          "kind": "swipe",
+          "f": 60
+        },
+        {
+          "kind": "arrive",
+          "f": 74
+        },
+        {
+          "kind": "swipe",
+          "f": 112
+        },
+        {
+          "kind": "arrive",
+          "f": 126
+        }
+      ]
+    },
+    {
+      "clip": "production/audit_future_v4/screens/V4Deepen.mp4",
+      "frames": 192,
+      "offset": 192,
+      "nar": [
+        "06"
+      ],
+      "sfx": [
+        {
+          "kind": "chime",
+          "f": 10,
+          "db": -30
+        }
+      ]
+    },
+    {
+      "clip": "production/audit_future_v4/composite/p04_wall.mp4",
+      "frames": 192,
+      "nar": [
+        "05"
+      ],
+      "sfx": [
+        {
+          "kind": "swipe",
+          "f": 40
+        },
+        {
+          "kind": "arrive",
+          "f": 50,
+          "db": -24
+        }
+      ]
+    },
+    {
+      "clip": "production/audit_future_v4/screens/V4Outputs.mp4",
+      "frames": 192,
+      "nar": [
+        "07"
+      ],
+      "sfx": [
+        {
+          "kind": "tap",
+          "f": 170
+        },
+        {
+          "kind": "send",
+          "f": 174,
+          "db": -28
+        }
+      ]
+    },
+    {
+      "clip": "production/audit_future_v4/composite/p06_next.mp4",
+      "frames": 192,
+      "xfade": 12,
+      "nar": [
+        "09"
+      ],
+      "sfx": []
+    },
+    {
+      "clip": "production/audit_future_v4/composite/p07_report.mp4",
+      "frames": 136,
+      "xfade": 12,
+      "nar": [
+        "10"
+      ],
+      "sfx": []
+    },
+    {
+      "clip": "production/audit_future_v4/composite/p08_report_tablet.mp4",
+      "frames": 72,
+      "nar": [],
+      "sfx": [
+        {
+          "kind": "arrive",
+          "f": 68,
+          "db": -28
+        }
+      ]
+    }
+  ],
+  "narration": [
+    {
+      "id": "01",
+      "text": "監査人の一日は、各子会社のリスクスコアの確認から始まります。",
+      "start": 3.0,
+      "end": 8.04
+    },
+    {
+      "id": "02",
+      "text": "スコアの根拠は科目区分ごとに示され、気になる区分からAIに質問できます。",
+      "start": 11.0,
+      "end": 17.44
+    },
+    {
+      "id": "03",
+      "text": "AIは、投入されたクライアントデータや関連資料を参照し、スコアの背景を整理します。",
+      "start": 25.333,
+      "end": 32.073
+    },
+    {
+      "id": "04",
+      "text": "対話の中で論点を整理し、スコアの分析や資料の探索を自律的に進めます。",
+      "start": 33.333,
+      "end": 39.513
+    },
+    {
+      "id": "06",
+      "text": "受領した資料を投入すると、同業比較や経営指標も踏まえて示唆が更新されます。",
+      "start": 49.333,
+      "end": 55.333
+    },
+    {
+      "id": "05",
+      "text": "発見事項はすぐにチームに共有されます。",
+      "start": 57.333,
+      "end": 60.273
+    },
+    {
+      "id": "07",
+      "text": "追加手続、調書メモ、会社への報告ドラフトまで、作成を支援します。",
+      "start": 65.333,
+      "end": 70.793
+    },
+    {
+      "id": "09",
+      "text": "監査人とのやり取りや評価結果の履歴は蓄積され、今後の監査においてAIが活用できるようになります。",
+      "start": 72.833,
+      "end": 79.742
+    },
+    {
+      "id": "10",
+      "text": "得られた示唆は監査にとどまらず、クライアントの経営にも届けられます。",
+      "start": 80.333,
+      "end": 85.003
+    }
+  ],
+  "sha256": "fccaa8e968468e99e97267024ac9b839c47d17e2fb8348a567d2985104dceb67"
+}

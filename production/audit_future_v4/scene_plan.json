@@ -1,0 +1,50 @@
+[
+ {
+  "id": "01",
+  "title": "P1 朝：製図台型タッチ画面に触れる（背面やや斜め）",
+  "first": "p01.png",
+  "prompt": "Photorealistic corporate documentary, eight seconds, locked-off tripod camera, no camera movement at all. Begin exactly from the provided first frame: a Japanese male auditor around 40 with short black hair and thin dark rectangular glasses, charcoal knit over a white shirt collar, seated at a clean desk seen from behind and slightly to the left, his right hand raised with the index finger pointing at a large flat touch display tilted back like a drafting table, whose screen stays completely dark and blank for the entire shot; a thin tablet lies flat on the desk, also dark. He slowly moves his hand forward and touches the dark screen once with his fingertip, holds it there for a moment, draws the hand back a little, then after a short pause reaches again and taps once at a slightly different spot, and finally lowers the hand to rest on the desk. Only the back of his head and a partial profile visible, mouth closed, no talking. The display, its arm, the tablet, the desk and the window stay perfectly still and sharp; both screens remain dark navy with no interface, no glow, no light, no text. Natural hand with five fingers, no cuts, no extra people, no subtitles, no logos."
+ },
+ {
+  "id": "02",
+  "title": "P2 対話：肩越し、画面に話しかける仕草",
+  "first": "p02.png",
+  "prompt": "Photorealistic corporate documentary, eight seconds, locked-off tripod camera, no camera movement. Begin exactly from the provided first frame: over-the-shoulder view from behind the right shoulder of the same Japanese male auditor around 40 with short black hair and thin dark rectangular glasses in a charcoal knit, his left hand resting on the lower edge of a large flat touch display tilted back like a drafting table, his right hand open in a small gesture; the display screen stays completely dark and blank for the entire shot, and a thin tablet lies flat on the desk, also dark. He makes two slow, small open-hand gestures with his right hand as if quietly explaining something to the screen, tilts his head slightly, then lets the right hand settle on the desk while the left hand stays on the display edge. Face hidden, only the back of the head and the cheek visible, no mouth visible, no talking. The display, its arm, the tablet, the desk and the window stay perfectly still and sharp; both screens remain dark navy with no interface, no glow, no light, no text. Natural hands with five fingers, no cuts, no extra people, no subtitles, no logos."
+ },
+ {
+  "id": "03",
+  "title": "P3 資料の連携：平置きタブレットを上へスワイプ",
+  "first": "p03.png",
+  "prompt": "Photorealistic corporate documentary, eight seconds, locked-off tripod camera, no camera movement. Begin exactly from the provided first frame: view from behind and to the right of the same Japanese male auditor around 40 with short black hair and thin dark rectangular glasses in a charcoal knit, seen from behind; in the lower foreground a thin tablet lies flat on the desk with its screen completely dark and blank, his right index finger resting on its lower half; beyond it a large flat touch display tilted back like a drafting table, its screen completely dark and blank for the entire shot. He swipes upward on the tablet with his index finger slowly three times, about two seconds apart, each swipe a short smooth motion from the lower half toward the upper edge of the tablet, lifting the finger slightly between swipes, then rests his hand beside the tablet. His head stays turned toward the display, face not visible. The tablet, display, arm, desk and window stay perfectly still and sharp; both screens remain dark navy with no interface, no glow, no light, no text. Natural hand with five fingers. No cuts, no extra people, no subtitles, no logos."
+ },
+ {
+  "id": "04",
+  "title": "P4 チーム共有：壁面表示の前に3人（背面）",
+  "first": "p04.png",
+  "prompt": "Photorealistic corporate documentary, eight seconds, locked-off tripod camera, no camera movement. Begin exactly from the provided first frame: three people seen from behind standing before a large flat bezel-less wall display whose screen stays completely dark and blank for the entire shot: on the left the Japanese male auditor in a charcoal knit holding a thin tablet horizontally at waist height, in the middle a Japanese woman around 40 with shoulder-length black hair in a charcoal jacket, on the right an older Japanese man around 55 with grey-streaked hair in a navy suit with arms folded. After about two seconds the auditor raises the tablet slightly toward the wall display and swipes once across it with his right thumb, then lowers it; the woman turns her head a little toward the auditor and back to the display; the older man unfolds his arms and shifts his weight. Backs and partial profiles only, no mouths visible, no talking. The display and wall stay perfectly still; the screen stays dark navy with no interface, no glow. No cuts, no extra people, no subtitles, no logos."
+ },
+ {
+  "id": "05",
+  "title": "P5 承認：パートナーが壁面にタッチ（夕方）",
+  "first": "p05.png",
+  "prompt": "Photorealistic corporate documentary, eight seconds, locked-off tripod camera, no camera movement. Begin exactly from the provided first frame: late afternoon warm light; the older Japanese man around 55 with grey-streaked hair in a navy suit stands close to a large flat bezel-less wall display, seen from behind, his right hand raised with the index finger near the dark blank screen; at the right the auditor in a charcoal knit and the woman in a charcoal jacket stand with their backs to the camera watching. He reads for a moment, then slowly moves his hand forward and touches the screen once with his fingertip, holds it there briefly, lowers the hand a little, then after a pause touches a second spot slightly lower and withdraws the hand to his side. The two people at the right stay mostly still with subtle natural motion. No faces visible, no talking. The display, wall and floor stay perfectly still; the screen stays dark navy with no interface, no glow, no light. Natural hand with five fingers. No cuts, no extra people, no subtitles, no logos."
+ },
+ {
+  "id": "06",
+  "title": "P6 翌朝：無人のデスク",
+  "first": "p06.png",
+  "prompt": "Photorealistic corporate documentary, eight seconds, locked-off tripod camera, no camera movement. Begin exactly from the provided first frame: an empty desk the next morning, fresh cool light, a large flat touch display tilted back like a drafting table with its screen completely dark and blank for the entire shot, a thin tablet lying flat on the desk also dark, an empty chair at the left, a white coffee cup. Nothing moves except a very slow drift of the sunlight band across the desk surface and faint distant clouds beyond the glass. The display, arm, tablet and desk stay perfectly still and sharp; both screens stay dark navy with no interface, no reflections of text, no glow. No people. No cuts, no extra people, no subtitles, no logos."
+ },
+ {
+  "id": "07",
+  "title": "P7 クライアント報告：役員会議室",
+  "first": "p07.png",
+  "prompt": "Photorealistic corporate documentary, eight seconds, locked-off tripod camera, no camera movement. Begin exactly from the provided first frame: a client boardroom with a long dark walnut table; at the far end a large flat wall display whose screen stays completely dark and blank for the entire shot; an older Japanese man around 55 with grey-streaked hair in a navy suit stands beside the display at its right, seen in three-quarter view from behind, gesturing toward the dark screen with his right hand; three executives sit with their backs to the camera watching the display: a man around 60 in a dark suit on the left, a woman around 50 with short brown hair in a navy jacket in the middle, a man around 60 with glasses in a grey suit on the right; two thin tablets lie flat on the table, dark. The standing man slowly moves his open right hand across the screen as if indicating two points in turn, then lowers both hands and turns his head slightly toward the executives, lips closed the whole time, not talking. The seated executives stay mostly still with subtle natural motion: the woman tilts her head slightly, the man on the right leans forward a little. The display, wall, table and tablets stay perfectly still and sharp; all screens remain dark navy with no interface, no glow, no text. Natural hands with five fingers. No cuts, no extra people, no subtitles, no logos."
+ },
+ {
+  "id": "08",
+  "title": "P8 インサート：役員のタブレットを指でなぞる",
+  "first": "p08.png",
+  "prompt": "Photorealistic corporate documentary, eight seconds, locked-off tripod camera, no camera movement. Begin exactly from the provided first frame: close view across a dark walnut boardroom table; a thin tablet lies flat on the table with its screen completely dark and blank for the entire shot; the hand of a woman in a navy jacket sleeve with a slim watch rests with the index finger near the lower part of the tablet screen; in the background, out of focus, a man in a navy suit stands beside a dark wall display. The index finger slowly touches the tablet screen, traces a short horizontal line from left to right over about two seconds, lifts briefly, then taps once and withdraws slightly to rest beside the tablet. The background man makes a small slow hand gesture, blurred. The tablet, table and wall display stay perfectly still and sharp; all screens remain dark navy with no interface, no glow, no text. Natural hand with five fingers, no face visible. No cuts, no extra people, no subtitles, no logos."
+ }
+]

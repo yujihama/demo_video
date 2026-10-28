@@ -1,0 +1,87 @@
+{
+ "_note": "Screen corners in 1920x1080 frame coordinates (TL,TR,BR,BL), fitted on the start frames with corners.py. Camera is locked; verify on the last frame before compositing.",
+ "p01": {
+  "person": "clips/high/scene01.mp4",
+  "ui": "screens/V4Top.mp4",
+  "out": "composite/p01_top.mp4",
+  "quad": "853,224,1762,223,1761,751,717,642",
+  "key": 48,
+  "spill": 0.1,
+  "expand": 6
+ },
+ "p02": {
+  "person": "clips/high/scene02.mp4",
+  "ui": "screens/V4Ask.mp4",
+  "offset": 0,
+  "out": "composite/p02_ask.mp4",
+  "quad": "750,180,1756,180,1702,773,600,660",
+  "key": 48,
+  "spill": 0.1,
+  "expand": 6
+ },
+ "p03": {
+  "person": "clips/high/scene03.mp4",
+  "ui": "screens/V4Deepen.mp4",
+  "offset": 0,
+  "out": "composite/p03_tablet.mp4",
+  "quad": "706,83,1630,76,1559,586,579,498",
+  "key": 48,
+  "spill": 0.08,
+  "ui2": "screens/V4Tablet.mp4",
+  "quad2": "878,671,1636,764,1483,1001,632,855",
+  "key2": 48,
+  "fly": "tablet.swipes+2",
+  "expand": 6
+ },
+ "p04": {
+  "person": "clips/high/scene04.mp4",
+  "ui": "screens/V4Wall.mp4",
+  "out": "composite/p04_wall.mp4",
+  "quad": "548,96,1379,94,1379,525,549,526",
+  "key": 48,
+  "spill": 0.12
+ },
+ "p05": {
+  "person": "clips/high/scene05.mp4",
+  "ui": "screens/V4Outputs.mp4",
+  "offset": 192,
+  "out": "composite/p05_approve.mp4",
+  "quad": "146,51,1312,130,1312,706,146,753",
+  "key": 48,
+  "spill": 0.12
+ },
+ "p06": {
+  "person": "clips/high/scene06.mp4",
+  "ui": "screens/V4Next.mp4",
+  "out": "composite/p06_next.mp4",
+  "quad": "648,255,1506,255,1431,713,527,656",
+  "key": 0,
+  "spill": 0.1
+ },
+ "p07": {
+  "person": "clips/high/scene07.mp4",
+  "ui": "screens/V4Report.mp4",
+  "out": "composite/p07_report.mp4",
+  "quad": "269,72,1050,105,1050,496,269,518",
+  "key": 80,
+  "spill": 0.1,
+  "note": "use frames 0-135 only; the partner turns to camera and his lips move after f140",
+  "min_occluder": 7000,
+  "expand": 6,
+  "key_xmin": 700
+ },
+ "p08": {
+  "person": "clips/high/scene08.mp4",
+  "ui": "screens/V4ReportTablet.mp4",
+  "ui_size": "1600,1200",
+  "out": "composite/p08_report_tablet.mp4",
+  "quad": "1068,532,1838,699,1452,959,654,719",
+  "key": 80,
+  "spill": 0.06,
+  "frames": 72,
+  "min_occluder": 12000,
+  "darken": 0.8,
+  "expand": 4,
+  "person_offset": 36
+ }
+}
