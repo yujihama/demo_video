@@ -38,7 +38,7 @@ export const INDICATORS = [
 
 export const TREND = [66, 68, 70, 69, 74, 81, 88, 97, 104, 112]; // 回転日数の推移（月次）
 
-export const QUESTION = "売上高・売上債権のスコアが高い背景を説明してください。";
+export const QUESTION = "売上の計上時点のずれについて、契約の条件と合わせて説明してください。";
 
 export const ANSWER_BACKGROUND = [
   {text: "第4四半期の最終週に、四半期売上の38%が計上されています。", src: "売上明細（投入済み）"},
@@ -60,7 +60,7 @@ export const ISSUES = [
 ];
 
 export const AUTO_STEPS = [
-  {name: "スコアの再分析（科目区分：売上高・売上債権）", status: "完了"},
+  {name: "スコアの再分析（売上高・売上債権）", status: "完了"},
   {name: "関連資料の探索（契約書・議事録・入金明細）", status: "完了 ／ 12件"},
   {name: "期末後入金と売上明細の突合", status: "実行中 68%"},
   {name: "同業・グループ内子会社との比較", status: "待機"},
@@ -114,4 +114,54 @@ export const REPORT_DRAFT = [
   "海外販売子会社における売上債権の長期化について",
   "期末最終週に売上が集中し、検収日と計上日に差異が見られます。収益認識の時点と回収可能性について追加の確認を実施します。",
   "新規得意先向けの与信管理について、例外承認の運用状況を確認させてください。",
+];
+
+// ---- Group map (v4 revision): 20 subsidiaries by region / business, no feature charts. ----
+export type Company = {name: string; biz: string; score: number; prev: number; col: number; row: number; hit?: boolean};
+export const COLUMNS = ["国内（製造）", "国内（物流・サービス）", "欧州", "アジア", "米州"];
+export const GROUP: Company[] = [
+  {name: "北関東精機", biz: "製造（精密部品）", score: 58, prev: 55, col: 0, row: 0},
+  {name: "ミナト精密", biz: "製造（金型）", score: 37, prev: 36, col: 0, row: 1},
+  {name: "湘南マテリアル", biz: "製造（素材）", score: 29, prev: 31, col: 0, row: 2},
+  {name: "東北ミナト工業", biz: "製造（組立）", score: 24, prev: 26, col: 0, row: 3},
+  {name: "ミナトロジスティクス", biz: "物流", score: 46, prev: 48, col: 1, row: 0},
+  {name: "ミナトサービス", biz: "保守サービス", score: 33, prev: 35, col: 1, row: 1},
+  {name: "ミナトファイナンス", biz: "金融・リース", score: 27, prev: 27, col: 1, row: 2},
+  {name: "ミナトITソリューションズ", biz: "情報システム", score: 22, prev: 24, col: 1, row: 3},
+  {name: "MNT Europe GmbH", biz: "販売（ドイツ）", score: 41, prev: 39, col: 2, row: 0},
+  {name: "MNT UK Ltd.", biz: "販売（英国）", score: 35, prev: 33, col: 2, row: 1},
+  {name: "MNT Nordic AB", biz: "販売（北欧）", score: 19, prev: 21, col: 2, row: 2},
+  {name: "MNT Iberia S.L.", biz: "販売（スペイン）", score: 17, prev: 18, col: 2, row: 3},
+  {name: "MNT China", biz: "製造・販売（中国）", score: 44, prev: 33, col: 3, row: 0},
+  {name: "MNT Korea", biz: "販売（韓国）", score: 31, prev: 30, col: 3, row: 1},
+  {name: "MNT Thailand", biz: "製造（タイ）", score: 39, prev: 29, col: 3, row: 2},
+  {name: "MNT Asia Trading", biz: "販売（シンガポール）", score: 87, prev: 54, col: 3, row: 3, hit: true},
+  {name: "MNT North America", biz: "販売（米国）", score: 52, prev: 49, col: 4, row: 0},
+  {name: "Orbis Labs", biz: "ソフトウェア（新規連結）", score: 71, prev: 0, col: 4, row: 1},
+  {name: "MNT Brasil", biz: "販売（ブラジル）", score: 36, prev: 38, col: 4, row: 2},
+  {name: "MNT Mexico", biz: "製造（メキシコ）", score: 28, prev: 27, col: 4, row: 3},
+];
+
+export const MODEL = {
+  title: "不正リスクスコアのモデル",
+  lines: [
+    "過去の不正事例 12万件と、財務・取引・文書データを学習した機械学習モデルが算出します。",
+    "スコアは確認の優先度（0〜100）であり、不正の確率や断定ではありません。",
+    "学習データの更新：2030年9月 ／ 毎晩 06:00 に全社を再計算",
+  ],
+};
+
+export const PROFILE = [
+  ["事業", "販売（海外）／ 東南アジア域内の卸売"],
+  ["所在地", "シンガポール"],
+  ["売上高", "184億円（連結比 6%）"],
+  ["従業員", "120名"],
+  ["監査上の位置づけ", "重要な構成単位"],
+];
+
+// What the AI says when asked to explain the score (plain sentences, with how closely each matches learned cases).
+export const EXPLAIN = [
+  {text: "期末最終週に、四半期売上の38%が集中しています。", match: "高", src: "売上明細"},
+  {text: "売上債権回転日数が、前年の68日から112日へ長期化しています。", match: "高", src: "試算表・年齢調べ"},
+  {text: "新規得意先3社向けの売上が21%を占め、うち2社が与信限度を超過しています。", match: "中", src: "与信管理台帳"},
 ];

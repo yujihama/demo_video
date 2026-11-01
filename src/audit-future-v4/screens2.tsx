@@ -17,8 +17,8 @@ export const ScreenIssues: React.FC = () => {
   const run = f >= T.issues.run;
   const merged = f >= T.issues.run + 96;
   return (
-    <AppShell active={4} crumbs={["論点管理", D.TARGET.name, "売上高・売上債権"]}>
-      <H sub="対話から論点を整理し、AIが計画を示して監査人の実行指示を待ちます。">確認すべき論点と自律分析</H>
+    <AppShell active={4} crumbs={["論点管理", D.TARGET.name, "売上の計上時点"]}>
+      <H sub="対話から論点を整理し、AIが分析計画を示して監査人の実行指示を待ちます。">確認すべき論点と追加確認事項</H>
       <Row style={{gap: 18, alignItems: "stretch"}}>
         <Panel title="確認すべき論点" style={{flex: 0.9}}>
           {D.ISSUES.map((k, i) => (
@@ -29,7 +29,7 @@ export const ScreenIssues: React.FC = () => {
               </div>
             </Reveal>
           ))}
-          <Reveal at={30}><div style={{fontSize: 15, color: c.muted, marginTop: 6}}>対話の内容から整理。論点は監査人が追加・修正できます。</div></Reveal>
+          <Reveal at={30}><div style={{fontSize: 15, color: c.muted, marginTop: 6}}>AIとの対話から整理。論点は監査人が追加・修正できます。</div></Reveal>
         </Panel>
         <div style={{flex: 1.5, ...aiPanel, padding: "20px 24px", position: "relative"}}>
           <Row style={{justifyContent: "space-between", marginBottom: 12}}>
@@ -66,7 +66,7 @@ export const ScreenIssues: React.FC = () => {
             {merged ? <Reveal at={T.issues.run + 96}><div style={{marginTop: 6, fontSize: 17, lineHeight: 1.7}}>3つの結果を統合しました。探索した資料 12件のうち、論点に関係する箇所 7件をハイライトしています。</div></Reveal> : null}
           </>}
         </div>
-        <Panel title="クライアントへの確認事項" right={merged ? <Button style={{padding: "8px 16px", fontSize: 16}}>確認依頼を作成</Button> : <Pill>分析完了後に整理</Pill>} style={{flex: 1}}>
+        <Panel title="追加確認事項（会社へ）" right={merged ? <Button style={{padding: "8px 16px", fontSize: 16}}>確認依頼を作成</Button> : <Pill>分析完了後に整理</Pill>} style={{flex: 1}}>
           {merged ? D.CLIENT_ASKS.map((s, i) => (
             <Reveal key={s} at={T.issues.run + 100 + i * 10}>
               <Row style={{alignItems: "flex-start", gap: 12, padding: "12px 4px", borderBottom: `1px solid ${c.line}`, fontSize: 18, lineHeight: 1.6}}>

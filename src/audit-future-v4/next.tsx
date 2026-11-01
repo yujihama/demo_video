@@ -3,6 +3,7 @@ import {AppShell, H, Kpi, Pill, Reveal, Row, Score, c, panel} from "./ui";
 import {BreathLine, useT} from "./anim";
 import {aiPanel} from "./ui";
 import * as D from "./data";
+import {GRID_H, GRID_W, GroupGrid} from "./group";
 
 
 const NEXT = [
@@ -14,16 +15,14 @@ const NEXT = [
   {name: "ミナトサービス", biz: "保守サービス", score: 33, prev: 33},
 ];
 
-const HIST_NEXT = [0, 1, 3, 5, 4, 3, 2, 2, 0, 0];
 
 /* 翌朝：手続結果を反映したダッシュボードと、蓄積された判断履歴 */
 export const ScreenNext: React.FC = () => {
   const f = useCurrentFrame();
   const t = useT(20, 40); // 87 -> 71 のスコア更新
-  const max = 5;
   return (
     <AppShell active={0} crumbs={["ダッシュボード", "子会社リスクスコア"]}>
-      <H sub="機械学習モデルによる確認優先度（0〜100）。不正の確率ではありません。">子会社リスクスコアの分布</H>
+      <H sub="過去の不正事例を学習した機械学習モデルによる確認優先度（0〜100）。不正の確率ではありません。">グループ各社の不正リスクスコア</H>
       <Row style={{gap: 16, marginBottom: 18}}>
         <Kpi label="対象子会社" value="20社" note="連結子会社" />
         <Kpi label="スコア 75以上" value={t > 0.6 ? "0社" : "1社"} note={t > 0.6 ? "追加手続を反映" : "MNT Asia Trading"} tone={t > 0.6 ? "neutral" : "high"} />
@@ -34,26 +33,17 @@ export const ScreenNext: React.FC = () => {
         </div>
       </Row>
       <Row style={{gap: 18, alignItems: "stretch"}}>
-        <div style={{...panel, padding: "20px 24px", flex: 1.35, position: "relative"}}>
-          <Row style={{justifyContent: "space-between", marginBottom: 14}}><div style={{fontSize: 21, fontWeight: 700, color: c.navy}}>リスクスコア別の会社数</div><Pill tone="teal">10月27日 06:10 更新</Pill></Row>
-          <div style={{position: "relative", height: 470, marginTop: 10}}>
-            <div style={{position: "absolute", left: 60, right: 10, top: 10, bottom: 56, borderLeft: `1px solid ${c.line}`, borderBottom: `1px solid ${c.line}`}}>
-              <div style={{position: "absolute", inset: 0, display: "flex", alignItems: "flex-end", gap: 14, padding: "0 16px"}}>
-                {D.HISTOGRAM.map((h, i) => {
-                  const n = h.n * (1 - t) + HIST_NEXT[i] * t;
-                  const hot = i === 7 && t > 0.5;
-                  return (
-                    <div key={h.bin} style={{flex: 1, position: "relative", height: "100%", display: "flex", alignItems: "flex-end"}}>
-                      <div style={{width: "100%", height: `${(n / max) * 100}%`, background: hot ? c.high : i === 8 && t < 0.5 ? c.high : c.low, borderRadius: "6px 6px 0 0"}} />
-                      <div style={{position: "absolute", top: "100%", left: 0, right: 0, textAlign: "center", fontSize: 15, color: c.muted, marginTop: 8}}>{h.bin}</div>
-                    </div>
-                  );
-                })}
-              </div>
+        <div style={{...panel, padding: "20px 24px", flex: 1.35, position: "relative", alignSelf: "flex-start"}}>
+          <Row style={{justifyContent: "space-between", marginBottom: 14}}><div style={{fontSize: 21, fontWeight: 700, color: c.navy}}>グループ各社の不正リスクスコア</div><Pill tone="teal">10月27日 06:10 更新</Pill></Row>
+          <div style={{width: GRID_W * 0.56, height: GRID_H * 0.56, position: "relative"}}>
+            <div style={{position: "absolute", left: 0, top: 0, transform: "scale(0.56)", transformOrigin: "0 0"}}>
+              <GroupGrid scoreOf={(k) => k.name === "MNT Asia Trading" ? Math.round(87 - 16 * t) : k.name === "Orbis Labs" ? Math.round(71 + 3 * t) : k.score}
+                deltaOf={(k) => k.name === "MNT Asia Trading" ? -Math.round(16 * t) : k.name === "Orbis Labs" ? Math.round(3 * t) : 0}
+                ring={t > 0.9 ? "MNT Asia Trading" : undefined}
+                tagOf={(k) => k.name === "MNT Asia Trading" && t > 0.9 ? <Pill tone="green">手続反映</Pill> : null} />
             </div>
-            <div style={{position: "absolute", left: 60, right: 10, bottom: 8, textAlign: "center", fontSize: 16, color: c.muted}}>リスクスコア</div>
-            <div style={{position: "absolute", left: -6, top: "40%", rotate: "-90deg", fontSize: 16, color: c.muted}}>会社数</div>
           </div>
+          <div style={{marginTop: 12, fontSize: 15, color: c.muted}}>{D.MODEL.lines[0]}</div>
         </div>
         <div style={{display: "flex", flexDirection: "column", gap: 18, flex: 1}}>
           <div style={{...panel, padding: "20px 24px"}}>

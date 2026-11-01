@@ -1,107 +1,117 @@
 {
-  "take_seconds": 59.05,
-  "mean_chars_per_second": 5.76,
-  "sha256_take": "5910bc0dd5dbf652de695eb4839627010333aa9a170ab0187166b28623f6c40a",
+  "take_seconds": 67.55,
+  "mean_chars_per_second": 5.97,
+  "sha256_take": "77b8877afad1a92463a6a438749919e358c9e6d76997c6b68cfce6df1143fc6f",
   "lines": [
     {
       "id": "01",
       "slot": "P1",
-      "text": "監査人の一日は、各子会社のリスクスコアの確認から始まります。",
-      "duration_seconds": 4.96,
-      "chars": 28,
-      "chars_per_second": 5.65,
+      "text": "監査人はまず、各子会社のリスクスコアを確認します。",
+      "duration_seconds": 4.08,
+      "chars": 23,
+      "chars_per_second": 5.64,
       "fits": true,
-      "rate_deviation_pct": -2.0
+      "rate_deviation_pct": -5.6
     },
     {
       "id": "02",
       "slot": "S2",
-      "text": "スコアの根拠は科目区分ごとに示され、気になる区分からAIに質問できます。",
-      "duration_seconds": 6.18,
-      "chars": 34,
-      "chars_per_second": 5.5,
+      "text": "大量の不正事例を学習した機械学習モデルがスコアを算出し、AIがその根拠を説明します。",
+      "duration_seconds": 6.9,
+      "chars": 40,
+      "chars_per_second": 5.8,
       "fits": true,
-      "rate_deviation_pct": -4.6
+      "rate_deviation_pct": -2.9
     },
     {
       "id": "03",
-      "slot": "S3",
-      "text": "AIは、投入されたクライアントデータや関連資料を参照し、スコアの背景を整理します。",
-      "duration_seconds": 6.58,
-      "chars": 38,
-      "chars_per_second": 5.78,
+      "slot": "P2",
+      "text": "監査人は、気になった点をそのままAIに問いかけます。",
+      "duration_seconds": 3.98,
+      "chars": 24,
+      "chars_per_second": 6.03,
       "fits": true,
-      "rate_deviation_pct": 0.3
+      "rate_deviation_pct": 1.0
     },
     {
       "id": "04",
-      "slot": "S4",
-      "text": "対話の中で論点を整理し、スコアの分析や資料の探索を自律的に進めます。",
-      "duration_seconds": 6.38,
-      "chars": 32,
-      "chars_per_second": 5.02,
+      "slot": "S3",
+      "text": "AIは、スコアの根拠に関連する箇所を、投入された資料から探してハイライトすることもできます。",
+      "duration_seconds": 6.08,
+      "chars": 43,
+      "chars_per_second": 7.07,
       "fits": true,
-      "rate_deviation_pct": -12.9
+      "rate_deviation_pct": 18.4
     },
     {
       "id": "05",
-      "slot": "P4",
-      "text": "発見事項はすぐにチームに共有されます。",
-      "duration_seconds": 2.72,
-      "chars": 18,
-      "chars_per_second": 6.62,
+      "slot": "S4",
+      "text": "対話を通じて論点と追加の確認事項を整理し、分析の実行を指示します。",
+      "duration_seconds": 5.8,
+      "chars": 31,
+      "chars_per_second": 5.34,
       "fits": true,
-      "rate_deviation_pct": 14.9
+      "rate_deviation_pct": -10.6
     },
     {
       "id": "06",
-      "slot": "S5",
-      "text": "受領した資料を投入すると、同業比較や経営指標も踏まえて示唆が更新されます。",
-      "duration_seconds": 6.1,
-      "chars": 35,
-      "chars_per_second": 5.74,
+      "slot": "P3",
+      "text": "分析や資料の探索はAIが自律的に進め、結果は手元でも確認できます。",
+      "duration_seconds": 6.06,
+      "chars": 31,
+      "chars_per_second": 5.12,
       "fits": true,
-      "rate_deviation_pct": -0.4
+      "rate_deviation_pct": -14.3
     },
     {
       "id": "07",
-      "slot": "S6",
-      "text": "追加手続、調書メモ、会社への報告ドラフトまで、作成を支援します。",
-      "duration_seconds": 5.64,
-      "chars": 28,
-      "chars_per_second": 4.96,
+      "slot": "S5",
+      "text": "受領した資料を投入すると、同業比較や経営指標も踏まえて示唆が更新されます。",
+      "duration_seconds": 6.06,
+      "chars": 35,
+      "chars_per_second": 5.78,
       "fits": true,
-      "rate_deviation_pct": -13.9
+      "rate_deviation_pct": -3.2
     },
     {
       "id": "08",
-      "slot": "P5",
-      "text": "判断するのは監査人です。",
-      "duration_seconds": 1.8,
-      "chars": 11,
-      "chars_per_second": 6.11,
+      "slot": "P4",
+      "text": "発見事項はすぐにチームに共有され、次の手続を話し合います。",
+      "duration_seconds": 4.44,
+      "chars": 27,
+      "chars_per_second": 6.08,
       "fits": true,
-      "rate_deviation_pct": 6.0
+      "rate_deviation_pct": 1.8
     },
     {
       "id": "09",
-      "slot": "P6",
-      "text": "監査人とのやり取りや評価結果の履歴は蓄積され、今後の監査においてAIが活用できるようになります。",
-      "duration_seconds": 7.66,
-      "chars": 46,
-      "chars_per_second": 6.01,
-      "fits": false,
-      "rate_deviation_pct": 4.3
+      "slot": "S6",
+      "text": "追加手続、調書メモ、会社への報告ドラフトまで、作成を支援します。",
+      "duration_seconds": 5.34,
+      "chars": 28,
+      "chars_per_second": 5.24,
+      "fits": true,
+      "rate_deviation_pct": -12.3
     },
     {
       "id": "10",
+      "slot": "P6",
+      "text": "監査人とのやり取りや評価結果の履歴は蓄積され、今後の監査においてAIが活用できるようになります。",
+      "duration_seconds": 6.92,
+      "chars": 46,
+      "chars_per_second": 6.65,
+      "fits": true,
+      "rate_deviation_pct": 11.3
+    },
+    {
+      "id": "11",
       "slot": "P7",
       "text": "得られた示唆をもとに監査が行われ、クライアントの経営陣にも届けられます。",
-      "duration_seconds": 5.45,
+      "duration_seconds": 4.89,
       "chars": 34,
-      "chars_per_second": 6.24,
+      "chars_per_second": 6.95,
       "fits": true,
-      "rate_deviation_pct": 8.3
+      "rate_deviation_pct": 16.4
     }
   ]
 }

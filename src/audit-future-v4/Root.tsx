@@ -1,5 +1,5 @@
 import {Composition, Folder} from "remotion";
-import {ScreenAsk, ScreenDrilldown, ScreenTop} from "./screens";
+import {ScreenAsk, ScreenExplain, ScreenTop} from "./screens";
 import {ScreenDeepen, ScreenIssues, ScreenTablet, ScreenWall} from "./screens2";
 import {ScreenOutputs} from "./screens3";
 import {ScreenNext} from "./next";
@@ -14,7 +14,7 @@ export const AuditFutureV4Root: React.FC = () => (
   <Folder name="AuditFutureV4Screens">
     <Composition id="V4Hook" component={Hook} {...S} durationInFrames={72} />
     <Composition id="V4Top" component={ScreenTop} {...S} durationInFrames={192} />
-    <Composition id="V4Drilldown" component={ScreenDrilldown} {...S} durationInFrames={192} />
+    <Composition id="V4Explain" component={ScreenExplain} {...S} durationInFrames={256} />
     <Composition id="V4Ask" component={ScreenAsk} {...S} durationInFrames={384} />
     <Composition id="V4Issues" component={ScreenIssues} {...S} durationInFrames={192} />
     <Composition id="V4Tablet" component={ScreenTablet} {...TAB} durationInFrames={192} />

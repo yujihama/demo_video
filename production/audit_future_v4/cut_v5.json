@@ -1,0 +1,206 @@
+[
+ {
+  "clip": "production/audit_future_v4/screens/V4Hook.mp4",
+  "frames": 72,
+  "nar": [],
+  "sfx": [
+   {
+    "kind": "hum:60",
+    "f": 6,
+    "db": -34
+   }
+  ]
+ },
+ {
+  "clip": "production/audit_future_v4/composite/p01_top.mp4",
+  "frames": 192,
+  "xfade": 12,
+  "nar": [
+   "01"
+  ],
+  "sfx": [
+   {
+    "kind": "tap",
+    "f": 64
+   },
+   {
+    "kind": "tap",
+    "f": 112
+   }
+  ]
+ },
+ {
+  "clip": "production/audit_future_v4/screens/V4Explain.mp4",
+  "frames": 216,
+  "nar": [
+   "02"
+  ],
+  "sfx": [
+   {
+    "kind": "chime",
+    "f": 24,
+    "db": -30
+   },
+   {
+    "kind": "hum:40",
+    "f": 156,
+    "db": -36
+   }
+  ],
+  "offset": 40
+ },
+ {
+  "clip": "production/audit_future_v4/composite/p02_ask.mp4",
+  "frames": 192,
+  "nar": [
+   "03"
+  ],
+  "sfx": [
+   {
+    "kind": "hum:40",
+    "f": 112,
+    "db": -36
+   }
+  ]
+ },
+ {
+  "clip": "production/audit_future_v4/screens/V4Ask.mp4",
+  "frames": 192,
+  "offset": 192,
+  "nar": [
+   "04"
+  ],
+  "sfx": [
+   {
+    "kind": "tap",
+    "f": 78
+   }
+  ]
+ },
+ {
+  "clip": "production/audit_future_v4/screens/V4Issues.mp4",
+  "frames": 192,
+  "nar": [
+   "05"
+  ],
+  "sfx": [
+   {
+    "kind": "tap",
+    "f": 56
+   },
+   {
+    "kind": "hum:96",
+    "f": 60,
+    "db": -36
+   },
+   {
+    "kind": "chime",
+    "f": 156,
+    "db": -30
+   }
+  ]
+ },
+ {
+  "clip": "production/audit_future_v4/composite/p03_tablet.mp4",
+  "frames": 192,
+  "nar": [
+   "06"
+  ],
+  "sfx": [
+   {
+    "kind": "swipe",
+    "f": 24
+   },
+   {
+    "kind": "arrive",
+    "f": 38
+   },
+   {
+    "kind": "swipe",
+    "f": 60
+   },
+   {
+    "kind": "arrive",
+    "f": 74
+   },
+   {
+    "kind": "swipe",
+    "f": 112
+   },
+   {
+    "kind": "arrive",
+    "f": 126
+   }
+  ]
+ },
+ {
+  "clip": "production/audit_future_v4/screens/V4Deepen.mp4",
+  "frames": 192,
+  "offset": 192,
+  "nar": [
+   "07"
+  ],
+  "sfx": [
+   {
+    "kind": "chime",
+    "f": 10,
+    "db": -30
+   }
+  ]
+ },
+ {
+  "clip": "production/audit_future_v4/composite/p04_wall.mp4",
+  "frames": 192,
+  "nar": [
+   "08"
+  ],
+  "sfx": [
+   {
+    "kind": "swipe",
+    "f": 40
+   },
+   {
+    "kind": "arrive",
+    "f": 50,
+    "db": -24
+   }
+  ]
+ },
+ {
+  "clip": "production/audit_future_v4/screens/V4Outputs.mp4",
+  "frames": 192,
+  "nar": [
+   "09"
+  ],
+  "sfx": [
+   {
+    "kind": "tap",
+    "f": 170
+   },
+   {
+    "kind": "send",
+    "f": 174,
+    "db": -28
+   }
+  ]
+ },
+ {
+  "clip": "production/audit_future_v4/composite/p06_next.mp4",
+  "frames": 192,
+  "xfade": 12,
+  "nar": [
+   "10"
+  ],
+  "sfx": []
+ },
+ {
+  "clip": "production/audit_future_v4/composite/p07_report.mp4",
+  "frames": 160,
+  "xfade": 12,
+  "nar": [
+   "11"
+  ],
+  "sfx": [],
+  "play": 136
+ }
+]

@@ -1,21 +1,22 @@
 import {AbsoluteFill, Sequence, interpolate, useCurrentFrame} from "remotion";
 import {AppShell, Button, H, Kpi, Panel, Pill, Reveal, Row, Score, c, panel, aiPanel} from "./ui";
-import {BreathLine, GrowBar, TouchRing, clamp, useT, useTranscript, useTyped} from "./anim";
+import {BreathLine, TouchRing, clamp, useTranscript, useTyped} from "./anim";
+import {GroupGrid, ScoreLegend} from "./group";
 import * as D from "./data";
 import {T} from "./timing";
 
-/* 1. トップ：夜間のAI作業の要点 → 分布の棒にタッチ → 会社の行にタッチ（P1 の机上画面に合成） */
+/* 1. トップ：グループ各社の不正リスクスコア（グラフなし、会社のタイルだけ）→ 会社のタイルにタッチ → 「AIに説明を求める」にタッチ（P1 の机上画面に合成） */
 export const ScreenTop: React.FC = () => {
   const f = useCurrentFrame();
-  const max = Math.max(...D.HISTOGRAM.map((h) => h.n));
   const tap1 = f >= T.top.tap1, tap2 = f >= T.top.tap2;
   const leave = interpolate(f, [T.top.tap2 + 12, T.top.tap2 + 44], [0, 1], clamp);
+  const pop = {left: 612, top: 592, width: 340, height: 130};
   return (
     <AbsoluteFill>
-    <AppShell active={0} crumbs={["ダッシュボード", "子会社リスクスコア"]}>
+    <AppShell active={0} crumbs={["ダッシュボード", "グループ各社の不正リスクスコア"]}>
       <div style={{opacity: 1 - leave, transform: `scale(${1 - leave * 0.02})`, transformOrigin: "50% 50%", height: "100%", position: "relative"}}>
         <Row style={{justifyContent: "space-between", alignItems: "flex-start", marginBottom: 16}}>
-          <H sub="機械学習モデルによる確認優先度（0〜100）。不正の確率ではありません。">子会社リスクスコアの分布</H>
+          <H sub="過去の不正事例を学習した機械学習モデルによる確認優先度（0〜100）。不正の確率ではありません。">グループ各社の不正リスクスコア</H>
           <Pill tone="teal">2030年3月期 第3四半期まで</Pill>
         </Row>
         <Row style={{gap: 16, marginBottom: 18, alignItems: "stretch"}}>
@@ -26,137 +27,116 @@ export const ScreenTop: React.FC = () => {
             <Row style={{justifyContent: "space-between"}}><span style={{fontSize: 15, color: c.aiMuted}}>夜間のAI作業　06:12 完了</span><Pill tone="ai">所要 14分</Pill></Row>
             <div style={{fontSize: 16, lineHeight: 1.65, marginTop: 6}}>
               20社を再分析し、3社のスコアを更新しました。<br />
-              <span style={{color: c.high, fontWeight: 700}}>MNT Asia Trading</span> が +33 で要確認。売上高・売上債権の区分から確認を推奨します。
+              <span style={{color: c.high, fontWeight: 700}}>MNT Asia Trading</span> が +33 で要確認。会社を選ぶと、根拠を説明します。
             </div>
             <BreathLine phases={[[0, "done"]]} style={{marginTop: 4}} />
           </div>
         </Row>
-        <Row style={{gap: 18, alignItems: "stretch"}}>
-          <Panel title="リスクスコア別の会社数" style={{flex: 1.35, position: "relative"}}>
-            <div style={{position: "relative", height: 470, marginTop: 10}}>
-              <div style={{position: "absolute", left: 60, right: 10, top: 10, bottom: 56, borderLeft: `1px solid ${c.line}`, borderBottom: `1px solid ${c.line}`}}>
-                {[0, 1, 2, 3, 4, 5].map((v) => (
-                  <div key={v} style={{position: "absolute", left: 0, right: 0, bottom: `${(v / max) * 100}%`, borderTop: v ? `1px dashed ${c.line}` : "none"}}>
-                    <span style={{position: "absolute", left: -34, top: -11, fontSize: 15, color: c.muted}}>{v}</span>
-                  </div>
-                ))}
-                <div style={{position: "absolute", inset: 0, display: "flex", alignItems: "flex-end", gap: 14, padding: "0 16px"}}>
-                  {D.HISTOGRAM.map((h) => {
-                    const pct = (h.n / max) * 100;
-                    return (
-                      <div key={h.bin} style={{flex: 1, position: "relative", height: "100%", display: "flex", alignItems: "flex-end"}}>
-                        <div style={{width: "100%", height: `${pct}%`, background: h.hit ? c.high : c.low, borderRadius: "6px 6px 0 0",
-                          boxShadow: h.hit && tap1 ? `0 0 0 4px ${c.amberSoft}` : "none"}} />
-
-                        <div style={{position: "absolute", top: "100%", left: 0, right: 0, textAlign: "center", fontSize: 15, color: c.muted, marginTop: 8}}>{h.bin}</div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-              <div style={{position: "absolute", left: 60, right: 10, bottom: 8, textAlign: "center", fontSize: 16, color: c.muted}}>リスクスコア</div>
-              <div style={{position: "absolute", left: -6, top: "40%", rotate: "-90deg", fontSize: 16, color: c.muted}}>会社数</div>
-            </div>
-          </Panel>
-          <Panel title="スコア上位の子会社" right={<span style={{fontSize: 15, color: c.muted}}>タップで内訳</span>} style={{flex: 1}}>
-            <div style={{display: "grid", gridTemplateColumns: "1fr 170px 70px 80px", fontSize: 15, color: c.muted, padding: "0 10px 8px"}}>
-              <span>子会社</span><span>事業</span><span style={{textAlign: "right"}}>スコア</span><span style={{textAlign: "right"}}>前月比</span>
-            </div>
-            {D.COMPANIES.map((k) => (
-              <div key={k.name} style={{display: "grid", gridTemplateColumns: "1fr 170px 70px 80px", alignItems: "center", padding: "13px 10px", fontSize: 19,
-                background: k.hit ? (tap2 ? c.amberSoft : tap1 ? "#fbf4ea" : "transparent") : "transparent", borderRadius: 8, marginBottom: 4,
-                boxShadow: k.hit && tap2 ? `inset 0 0 0 1px ${c.high}` : "none"}}>
-                <span style={{fontWeight: k.hit ? 700 : 500}}>{k.name}</span>
-                <span style={{color: c.muted, fontSize: 16}}>{k.biz}</span>
-                <span style={{textAlign: "right"}}><Score v={k.score} size={22} /></span>
-                <span style={{textAlign: "right", fontSize: 16, color: k.prev === 0 ? c.muted : k.score - k.prev > 0 ? c.high : c.muted}}>{k.prev === 0 ? "新規" : (k.score - k.prev > 0 ? "+" : "") + (k.score - k.prev)}</span>
-              </div>
-            ))}
-          </Panel>
+        <div style={{position: "absolute", left: 0, top: 236}}>
+          <GroupGrid ring={tap1 ? D.TARGET.name : undefined} ringStrong={tap2} />
+        </div>
+        <Row style={{position: "absolute", left: 0, right: 0, top: 744, ...panel, padding: "14px 20px", fontSize: 15, color: c.muted, lineHeight: 1.7, justifyContent: "space-between"}}>
+          <span><b style={{color: c.navy, marginRight: 12}}>{D.MODEL.title}</b>{D.MODEL.lines[0]}　{D.MODEL.lines[1]}</span>
+          <ScoreLegend />
         </Row>
-        {tap1 ? <div style={{position: "absolute", left: T.top.p2[0] - 90, top: T.top.p1[1] - 150, width: T.top.p1[0] - T.top.p2[0] + 230, ...panel, padding: "14px 18px", fontSize: 17,
-          boxShadow: "0 12px 36px #0b1a2e22", border: `1px solid ${tap2 ? c.high : c.line}`, opacity: interpolate(f, [T.top.tap1, T.top.tap1 + 8], [0, 1], clamp)}}>
+        {tap1 ? <div style={{position: "absolute", ...pop, ...panel, padding: "14px 18px", boxSizing: "border-box",
+          boxShadow: "0 12px 36px #0b1a2e22", border: `1px solid ${tap2 ? c.teal : c.line}`, opacity: interpolate(f, [T.top.tap1, T.top.tap1 + 8], [0, 1], clamp)}}>
           <Row style={{justifyContent: "space-between"}}>
-            <Button primary pressed={tap2} style={{padding: "8px 16px", fontSize: 16}}>内訳を表示</Button>
-            <span><b style={{fontSize: 19}}>{D.TARGET.name}</b>　スコア <Score v={87} size={20} />　<span style={{color: c.muted}}>前月 54　＋33</span></span>
+            <span><b style={{fontSize: 18}}>{D.TARGET.name}</b></span>
+            <span><Score v={87} size={22} />　<span style={{color: c.muted, fontSize: 14}}>前月 54 ／ +33</span></span>
           </Row>
-          <div style={{marginTop: 8, color: c.muted, fontSize: 15}}>売上高・売上債権の寄与が最大（38pt）。夜間の再分析で +33。</div>
+          <div style={{marginTop: 4, color: c.muted, fontSize: 14}}>{D.TARGET.region}　要確認</div>
+          <div style={{position: "absolute", left: 18, top: 66}}>
+            <Button primary pressed={tap2} style={{padding: "9px 18px", fontSize: 16}}>AIに説明を求める</Button>
+          </div>
+          <div style={{position: "absolute", right: 18, top: 76, fontSize: 13, color: c.muted}}>{tap2 ? "説明を準備しています" : "詳細を開く"}</div>
         </div> : null}
         <TouchRing at={T.top.tap1} x={T.top.p1[0]} y={T.top.p1[1]} />
         <TouchRing at={T.top.tap2} x={T.top.p2[0]} y={T.top.p2[1]} />
       </div>
     </AppShell>
-    {/* The drilldown opens in place; the next full-screen cut continues it (cut offset = 192 - this start). */}
-    <Sequence from={T.top.tap2 + 40}><ScreenDrilldown /></Sequence>
+    {/* The explanation opens in place; the next full-screen cut continues it (cut offset = 192 - this start). */}
+    <Sequence from={T.top.tap2 + 40}><ScreenExplain /></Sequence>
     </AbsoluteFill>
   );
 };
 
-/* 2. ドリルダウン：科目区分の内訳 → 区分を長押し → 指標 → 「AIに聞く」にタッチ → 聞き取り開始 */
-export const ScreenDrilldown: React.FC = () => {
+/* 2. AIによるスコアの説明（232フレーム）：会社の概要とモデルの説明 → AIが根拠を3点、文章で説明 → 聞き取り待ちへ。グラフは出さない。 */
+const E = {intro: 22, reasons: [64, 96, 128], close: 160, listen: 196};
+export const ScreenExplain: React.FC = () => {
   const f = useCurrentFrame();
-  const maxPts = D.CATEGORIES[0].pts;
-  const selected = f >= T.drill.press + 10;
-  const w = 560, h = 150;
-  const draw = useT(T.drill.press + 30, 50);
-  const n = Math.max(2, Math.round(D.TREND.length * draw));
-  const pts = D.TREND.slice(0, n).map((v, i) => `${(i / (D.TREND.length - 1)) * w},${h - ((v - 60) / 60) * h}`).join(" ");
-  const asked = f >= T.drill.ask;
-  const bar = interpolate(f, [T.drill.ask + 4, T.drill.ask + 18], [0, 1], clamp);
+  const intro = useTyped("スコア 87 は、学習した不正事例と共通する兆候が3つ重なっていることによります。", E.intro, 22);
+  const closing = useTyped("前月からの上昇 +33 は、主に 1 と 3 によるものです。詳しく聞きたい点を話しかけてください。", E.close, 22);
+  const listening = f >= E.listen;
   return (
-    <AppShell active={2} crumbs={["子会社一覧", D.TARGET.name, "スコアの内訳"]}>
+    <AppShell active={2} crumbs={["子会社一覧", D.TARGET.name, "スコアの説明"]}>
       <Row style={{justifyContent: "space-between", marginBottom: 16}}>
         <div style={{fontSize: 30, fontWeight: 700, color: c.navy}}>{D.TARGET.name} <span style={{fontSize: 18, color: c.muted, fontWeight: 400, marginLeft: 10}}>{D.TARGET.region}</span></div>
         <Row style={{gap: 26}}>
-          <div><div style={{fontSize: 15, color: c.muted}}>総合スコア</div><Score v={D.TARGET.score} size={40} /></div>
+          <div><div style={{fontSize: 15, color: c.muted}}>不正リスクスコア</div><Score v={D.TARGET.score} size={40} /></div>
           <div><div style={{fontSize: 15, color: c.muted}}>前月</div><div style={{fontSize: 28, fontWeight: 700}}>{D.TARGET.prev} <span style={{color: c.high, fontSize: 20}}>▲33</span></div></div>
           <Pill tone="high">要確認</Pill>
         </Row>
       </Row>
-      <Row style={{gap: 18, alignItems: "stretch"}}>
-        <Panel title="科目区分ごとのスコア内訳" right={<span style={{fontSize: 15, color: c.muted}}>合計 87pt ／ 区分を長押しで指標を表示</span>} style={{flex: 1.1, position: "relative"}}>
-          {D.CATEGORIES.map((k, i) => (
-            <div key={k.name} style={{display: "grid", gridTemplateColumns: "190px 1fr 64px", alignItems: "center", gap: 14, padding: "11px 12px", borderRadius: 8,
-              background: k.hit && selected ? c.amberSoft : "transparent", boxShadow: k.hit && selected ? `inset 0 0 0 1px ${c.high}` : "none", marginBottom: 6, fontSize: 19}}>
-              <span style={{fontWeight: k.hit ? 700 : 500}}>{k.name}</span>
-              <GrowBar pct={(k.pts / maxPts) * 100} color={k.hit ? c.high : c.low} start={4 + i * 4} />
-              <span style={{textAlign: "right", fontWeight: 700, color: k.hit ? c.high : c.navy}}>{k.pts}pt</span>
-            </div>
-          ))}
-          <div style={{fontSize: 15, color: c.muted, marginTop: 10}}>内訳は各区分の指標がスコアに寄与した点数。モデルの説明可能性（SHAP値）に基づく表示。</div>
-          <TouchRing at={T.drill.press} x={120} y={78} hold={12} />
-        </Panel>
-        <Panel title={selected ? "売上高・売上債権：主要指標" : "主要指標"} right={selected ? <Pill tone="high">寄与 38pt</Pill> : <span style={{fontSize: 15, color: c.muted}}>区分を選択してください</span>} style={{flex: 1, position: "relative"}}>
-          {selected ? <>
-            {D.INDICATORS.map((k, i) => (
-              <Reveal key={k.name} at={T.drill.press + 14 + i * 6}>
-                <Row style={{justifyContent: "space-between", padding: "11px 6px", borderBottom: `1px solid ${c.line}`, fontSize: 19}}>
-                  <span>{k.name}</span>
-                  <Row style={{gap: 12}}><span style={{fontSize: 15, color: c.muted}}>{k.ref}</span><b style={{color: k.tone === "high" ? c.high : "#9a6b1c", fontSize: 22}}>{k.value}</b></Row>
-                </Row>
+      <Row style={{gap: 18, alignItems: "stretch", height: 860}}>
+        <div style={{flex: 0.85, display: "flex", flexDirection: "column", gap: 18}}>
+          <Panel title="会社の概要">
+            {D.PROFILE.map(([k, v], i) => (
+              <Reveal key={k} at={4 + i * 5}>
+                <div style={{display: "grid", gridTemplateColumns: "150px 1fr", padding: "10px 4px", borderBottom: `1px solid ${c.line}`, fontSize: 17, lineHeight: 1.5}}>
+                  <span style={{color: c.muted}}>{k}</span><span>{v}</span>
+                </div>
               </Reveal>
             ))}
-            <Reveal at={T.drill.press + 30}>
-              <div style={{marginTop: 18, fontSize: 16, color: c.muted}}>売上債権回転日数の推移（月次）</div>
-              <svg width={w} height={h + 20} style={{marginTop: 6, overflow: "visible"}}>
-                <polyline points={pts} fill="none" stroke={c.high} strokeWidth={3} />
-                {D.TREND.slice(0, n).map((v, i) => <circle key={i} cx={(i / (D.TREND.length - 1)) * w} cy={h - ((v - 60) / 60) * h} r={4} fill={c.high} />)}
-                {draw >= 1 ? <text x={w} y={h - ((112 - 60) / 60) * h - 12} textAnchor="end" fontSize={16} fill={c.high} fontWeight={700}>112日</text> : null}
-                <text x={0} y={h + 16} fontSize={14} fill={c.muted}>1月</text><text x={w} y={h + 16} fontSize={14} fill={c.muted} textAnchor="end">10月</text>
-              </svg>
-            </Reveal>
-            <Reveal at={T.drill.press + 60}><Row style={{justifyContent: "flex-end", marginTop: 14}}><Button primary pressed={asked}>この区分についてAIに聞く</Button></Row></Reveal>
-            <TouchRing at={T.drill.ask} x={700} y={610} />
-          </> : <div style={{height: 520, display: "grid", placeItems: "center", color: c.muted, fontSize: 18}}>左の科目区分を長押しすると、関連する指標と推移を表示します。</div>}
-        </Panel>
+          </Panel>
+          <Panel title={D.MODEL.title} right={<Pill tone="teal">機械学習</Pill>} style={{flex: 1}}>
+            {D.MODEL.lines.map((l, i) => (
+              <Reveal key={i} at={30 + i * 8}>
+                <div style={{fontSize: 17, lineHeight: 1.75, padding: "8px 4px", borderBottom: i < 2 ? `1px solid ${c.line}` : "none"}}>{l}</div>
+              </Reveal>
+            ))}
+            <Reveal at={60}><div style={{marginTop: 14, fontSize: 15, color: c.muted, lineHeight: 1.6}}>説明は、モデルが注目した兆候を投入済みの資料と照らして文章で示します。スコアの内訳の数値そのものは判断材料にしません。</div></Reveal>
+          </Panel>
+        </div>
+        <div style={{flex: 1.5, ...aiPanel, padding: "22px 28px", position: "relative", display: "flex", flexDirection: "column"}}>
+          <Row style={{justifyContent: "space-between"}}>
+            <div style={{fontSize: 20, fontWeight: 700}}>分析アシスタント</div>
+            <Pill tone="ai">スコアの説明：{D.TARGET.name}</Pill>
+          </Row>
+          <div style={{flex: 1, marginTop: 20}}>
+            <div style={{display: "flex", gap: 12}}>
+              <span style={{width: 34, height: 34, borderRadius: 17, background: `${c.aiLine}22`, color: c.aiLine, display: "grid", placeItems: "center", fontWeight: 800, flex: "none"}}>AI</span>
+              <div style={{flex: 1}}>
+                {f < E.intro ? <div style={{fontSize: 18, color: c.aiMuted, minHeight: 34}}>スコアの根拠を整理しています</div> : <div style={{fontSize: 21, lineHeight: 1.7, minHeight: 34}}>{intro}</div>}
+                <Reveal at={E.reasons[0] - 10}><div style={{fontSize: 15, color: c.aiMuted, marginTop: 16, fontWeight: 700}}>モデルが注目した兆候</div></Reveal>
+                {D.EXPLAIN.map((a, i) => (
+                  <Reveal key={i} at={E.reasons[i]}>
+                    <div style={{display: "grid", gridTemplateColumns: "34px 1fr auto", gap: 12, alignItems: "start", padding: "14px 0", borderBottom: `1px solid ${c.aiLine}22`, fontSize: 20, lineHeight: 1.65}}>
+                      <span style={{width: 28, height: 28, borderRadius: 14, border: `1px solid ${c.aiLine}`, color: c.aiLine, display: "grid", placeItems: "center", fontSize: 15, marginTop: 3}}>{i + 1}</span>
+                      <span>{a.text}<div style={{fontSize: 14, color: c.aiMuted, marginTop: 4}}>参照：{a.src}</div></span>
+                      <Pill tone={a.match === "高" ? "high" : "mid"}>学習事例との一致 {a.match}</Pill>
+                    </div>
+                  </Reveal>
+                ))}
+                <div style={{marginTop: 18, fontSize: 20, lineHeight: 1.7, minHeight: 32}}>{closing}</div>
+                <Reveal at={E.close + 50}><div style={{fontSize: 15, color: c.aiMuted, marginTop: 22, fontWeight: 700}}>たとえば、こんな質問ができます</div></Reveal>
+                <Row style={{gap: 10, marginTop: 10, flexWrap: "wrap"}}>
+                  {["計上時点のずれを、契約条件と合わせて", "与信枠が広がった経緯", "学習した類似事例との違い"].map((s, i) => (
+                    <Reveal key={s} at={E.close + 56 + i * 8}><span style={{display: "inline-block", padding: "10px 16px", fontSize: 17, background: c.aiPanelSoft, borderRadius: 20, border: `1px solid ${c.aiLine}33`}}>{s}</span></Reveal>
+                  ))}
+                </Row>
+              </div>
+            </div>
+          </div>
+          <div style={{marginTop: 10}}>
+            <Row style={{justifyContent: "space-between", fontSize: 15, color: c.aiMuted}}>
+              <span>{f < E.intro ? "考えています" : listening ? "聞いています" : "回答中"}</span>
+              <span>話しかけるか、タップして入力</span>
+            </Row>
+            <BreathLine phases={[[0, "think"], [E.intro, "answer"], [E.close + 60, "done"], [E.listen, "listen"]]} style={{marginTop: 4}} />
+          </div>
+        </div>
       </Row>
-      {asked ? <div style={{position: "absolute", left: 0, right: 0, bottom: 0, ...aiPanel, padding: "18px 28px", opacity: bar, transform: `translateY(${(1 - bar) * 30}px)`}}>
-        <Row style={{justifyContent: "space-between"}}>
-          <span style={{fontSize: 18}}>分析アシスタント　<span style={{color: c.aiMuted, fontSize: 16}}>文脈：{D.TARGET.name} ／ 売上高・売上債権</span></span>
-          <span style={{fontSize: 16, color: c.aiMuted}}>聞いています…　話しかけるか、タップして入力</span>
-        </Row>
-        <BreathLine phases={[[T.drill.ask + 10, "listen"]]} style={{marginTop: 8}} />
-      </div> : null}
     </AppShell>
   );
 };
@@ -175,17 +155,17 @@ export const ScreenAsk: React.FC = () => {
   const q = useTranscript(D.QUESTION, T.ask.speakStart, 9.5);
   const thinking = f >= T.ask.speakEnd && f < T.ask.answer;
   const answered = f >= T.ask.answer;
-  const intro = useTyped("投入済みのクライアントデータと関連資料を参照し、スコアが高い背景を整理しました。", T.ask.answer, 22);
+  const intro = useTyped("販売契約、売上明細、検収記録を照合し、計上時点のずれの背景を整理しました。", T.ask.answer, 22);
   const cited = f >= T.ask.cite;
   const slide = interpolate(f, [T.ask.cite + 4, T.ask.cite + 20], [0, 1], clamp);
-  const closing = useTyped("次に、確認すべき論点を整理し、スコアの再分析と関連資料の探索を進めます。", T.ask.close, 22);
+  const closing = useTyped("次に、確認すべき論点と追加の確認事項を整理します。", T.ask.close, 22);
   return (
-    <AppShell active={2} crumbs={["スコア分析", D.TARGET.name, "売上高・売上債権", "AIに聞く"]}>
+    <AppShell active={2} crumbs={["スコア分析", D.TARGET.name, "AIとの対話"]}>
       <Row style={{gap: 18, alignItems: "stretch", height: "100%"}}>
         <div style={{flex: 1, ...aiPanel, padding: "22px 28px", position: "relative", display: "flex", flexDirection: "column"}}>
           <Row style={{justifyContent: "space-between"}}>
             <div style={{fontSize: 20, fontWeight: 700}}>分析アシスタント</div>
-            <Pill tone="ai">文脈：MNT Asia Trading ／ 売上高・売上債権</Pill>
+            <Pill tone="ai">文脈：MNT Asia Trading ／ スコア 87 の説明から続き</Pill>
           </Row>
           <div style={{flex: 1, marginTop: 22, position: "relative"}}>
             {f >= T.ask.speakStart ? <div style={{display: "flex", justifyContent: "flex-end"}}>
@@ -199,7 +179,7 @@ export const ScreenAsk: React.FC = () => {
               <span style={{width: 34, height: 34, borderRadius: 17, background: `${c.aiLine}22`, color: c.aiLine, display: "grid", placeItems: "center", fontWeight: 800, flex: "none"}}>AI</span>
               <div style={{flex: 1}}>
                 <div style={{fontSize: 20, lineHeight: 1.7, minHeight: 34}}>{intro}</div>
-                <Reveal at={T.ask.answer + 44}><div style={{fontSize: 15, color: c.aiMuted, marginTop: 14, fontWeight: 700}}>スコアの背景（参照元つき）</div></Reveal>
+                <Reveal at={T.ask.answer + 44}><div style={{fontSize: 15, color: c.aiMuted, marginTop: 14, fontWeight: 700}}>背景（参照元つき）</div></Reveal>
                 {D.ANSWER_BACKGROUND.map((a, i) => (
                   <Reveal key={i} at={T.ask.answer + 52 + i * 16}>
                     <div style={{display: "grid", gridTemplateColumns: "28px 1fr auto", gap: 10, alignItems: "start", padding: "10px 0", borderBottom: `1px solid ${c.aiLine}22`, fontSize: 19, lineHeight: 1.6}}>
